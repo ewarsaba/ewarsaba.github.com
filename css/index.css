@@ -1,0 +1,56 @@
+.name, .tagline, .links a {
+	font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif; 
+}
+
+.name {
+	margin-top: 60%; 
+	color: #333333;
+	font-size: 2.5em; 
+	font-weight: bold;
+}
+
+.tagline {
+	color: #333333;
+	font-size: 1.5em; 
+	font-style: italic;
+}
+
+.nametag {
+	float: left;
+	margin-right:2em;
+	margin-left: 20%;
+	text-align: right
+}
+
+.main {
+	margin: 10% auto 0;
+	text-align:center;
+	width:50%;
+}
+
+.links {
+	float: left; 
+	text-align: left
+}
+
+.links a {
+	font-size: 2em;
+	text-decoration: none;
+	line-height: 32px;
+}
+
+.links a:link, .links a:visited {
+	color: #333333;
+}
+.links a:hover {
+	color: #FF8C00;
+}
+
+.links img {
+	vertical-align: middle;
+}
+
+.links div {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
