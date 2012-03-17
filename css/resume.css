@@ -1,0 +1,136 @@
+.main {
+	width: 55em;
+	margin: auto;
+	font-family: 'Open Sans Light', 'Open Sans', sans-serif;
+	color: #333;
+}
+.nameheader {
+	border-bottom: 1px solid #CCC; 
+	overflow: auto;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.name {
+	float: left; 
+	width: 66%; 
+	font-size:3em;  
+}
+
+.contact-info {
+	float: right;
+	width: 33%;
+	text-align: right;
+	font-size: 0.9em;
+	margin-top: 0.3em;
+}
+
+.section {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 0.8em;
+	padding-top: 0.8em;
+	overflow: auto;
+}
+
+.section.last {
+	border: none;
+	padding-bottom: 0;
+}
+
+.section .header {
+	font-style: italic;
+	font-size: 1.5em;
+	width: 19.5%;
+	float: left;
+}
+
+.section .content {
+	float: left;
+	width: 80.5%;
+	overflow: auto;
+}
+
+.skill {
+	width: 32.5%;
+	float: left;
+	padding-right:0.2em;
+}
+
+.skill .title {
+	font-size: 1.5em;
+}
+
+.skill .desc {
+	font-size: 1em;
+}
+
+.technical {
+	width: 20%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.technical li {
+	list-style: none;
+	padding-bottom: 0.3em;
+}
+
+.job {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 0.8em;
+	overflow: auto;
+	padding-top: 0.8em;
+}
+
+.job.first {
+	padding-top: 0;
+}
+
+.job.last {
+	border: none;
+	padding-bottom: 0;
+}
+
+.job .info {
+	float: left;
+}
+.job .company {
+	font-size: 1.5em;
+}
+
+.job .title {
+	font-size: 1em;
+}
+
+.job .dateloc {
+	font-size: 0.8em;
+	float: right;
+	font-style: italic;
+	text-align: right;
+	padding-right:0.1em;
+}
+
+.job .desc {
+	float: left;
+	width: 100%;
+	font-size: 0.9em;
+	padding-top: 0.5em;
+}
+
+.job .desc ul {
+	margin: 0;
+	padding: 0;
+}
+
+.job .desc li {
+	list-style: circle none inside;
+	padding-bottom: 0.3em;
+}
+
+.job .subtitle {
+	font-size: 0.9em;
+	float: left;
+	width: 100%;
+	padding-top: 0.5em;
+}
