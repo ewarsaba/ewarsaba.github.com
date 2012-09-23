@@ -3,7 +3,7 @@
 }
 
 .name {
-	margin-top: 60%; 
+	margin-top: 70%; 
 	color: #333333;
 	font-size: 2.5em; 
 	font-weight: bold;
@@ -17,14 +17,14 @@
 
 .nametag {
 	float: left;
-	margin-right:2em;
-	margin-left: 20%;
+	margin-right:2em;s
 	text-align: right
 }
 
 .main {
-	margin: 10% auto 0;
-	text-align:center;
+	margin: 0 auto;
+	margin-top: 5%;
+	text-align:left;
 	width:50%;
 }
 
