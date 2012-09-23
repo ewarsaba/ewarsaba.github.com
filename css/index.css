@@ -39,6 +39,13 @@
 	line-height: 32px;
 }
 
+.albums a {
+	font-size: 1.5em;
+	text-decoration: none;
+	line-height: 24px;
+	margin-left: 2em;
+}
+
 .links a:link, .links a:visited {
 	color: #333333;
 }

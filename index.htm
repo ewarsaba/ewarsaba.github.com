@@ -24,6 +24,15 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+  function toggle(id) {
+	var ele = document.getElementById(id);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+  	}
+	else {
+		ele.style.display = "block";
+	}
+} 
 </script>
 </head>
 
@@ -51,6 +60,12 @@
 
       <div><a href="http://www.last.fm/user/ewarsaba" target="_blank"><img alt="Last.fm" title="Last.fm Profile" src="img/lastfm.png" /> last.fm</a></div>
 
+	  <div><a href="javascript:toggle('albums');"><img alt="Albums" title="Album Ratings" src="img/music.png" /> album ratings</a></div>
+	  
+	  <div id="albums" class="albums" style="display:none">
+		  <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE" target="_blank">2012 Albums</a></div>
+		  <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE" target="_blank">2011 Albums</a></div>
+	  </div>
   </div>
  </div>
 </body>
