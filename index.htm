@@ -11,7 +11,8 @@
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:light" />
-  
+  <script src="js/jquery.js" style=""></script>
+  <script src="js/index.js" style=""></script>
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -46,27 +47,45 @@
 
 
   <div class="links">
-      <div><a href="resume.htm"><img alt="Resume" title="Resume" src="img/cv.gif" /> resume</a></div>
+      <div class="link" onclick="location.href='resume.htm';">
+        <a><img alt="Resume" title="Resume" src="img/resume.png" /> resume</a>
+      </div>
 
-      <div><a href="mailto:eric@warsaba.com"><img alt="Email" title="Contact me via email" src="img/email.png" /> email</a></div>
+      <div class="link" onclick="location.href='mailto:eric@warsaba.com';">
+        <a><img alt="Email" title="Contact me via email" src="img/email.png" /> email</a>
+      </div>
 
-      <div><a href="https://github.com/ewarsaba" target="_blank"><img alt="github" title="Check me out on github" src="img/github.png" /> github</a></div>
+      <div class="link"  onclick="window.open('https://github.com/ewarsaba');">
+        <a><img alt="github" title="Check me out on github" src="img/github.png" /> github</a>
+      </div>
 
-      <div><a href="http://twitter.com/ewarsaba" target="_blank"><img alt="Twitter" title="Follow me on Twitter" src="img/twitter.png" /> twitter</a></div>
+      <div class="link" onclick="window.open('http://twitter.com/ewarsaba');">
+        <a><img alt="Twitter" title="Follow me on Twitter" src="img/twitter.png" /> twitter</a>
+      </div>
 
-      <div><a href="http://ca.linkedin.com/in/ewarsaba" target="_blank"><img alt="LinkedIn" title="Add me on LinkedIn" src="img/linkedin.png" /> linkedin</a></div>
+      <div class="link" onclick="window.open('http://ca.linkedin.com/in/ewarsaba');">
+        <a><img alt="LinkedIn" title="Add me on LinkedIn" src="img/linkedin.png" /> linkedin</a>
+      </div>
 
-      <div><a href="https://foursquare.com/ewarsaba" target="_blank"><img alt="Foursquare" title="Follow me on Foursquare" src="img/foursquare.png" /> foursquare</a></div>
-
-      <div><a href="http://www.last.fm/user/ewarsaba" target="_blank"><img alt="Last.fm" title="Last.fm Profile" src="img/lastfm.png" /> last.fm</a></div>
-
-	  <div><a href="javascript:toggle('albums');"><img alt="Albums" title="Album Ratings" src="img/music.png" /> album ratings</a></div>
+      <div class="link" onclick="window.open('http://www.last.fm/user/ewarsaba');">
+        <a><img alt="Last.fm" title="Last.fm Profile" src="img/lastfm.png" /> last.fm</a>
+      </div>
+      
+      <div class="link" onclick="javascript:toggle('albums');">
+        <a><img alt="Albums" title="Album Ratings" src="img/music.png" /> album ratings</a>
+      </div>
 	  
-	  <div id="albums" class="albums" style="display:none">
-		  <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dFplOUNlU0xXRmswbC1OX3ZDaEtMQlE" target="_blank">2013</a></div>
-		  <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE" target="_blank">2012</a></div>
-		  <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE" target="_blank">2011</a></div>
-	  </div>
+  	  <div id="albums" class="albums" style="display:none">
+  		  <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dFplOUNlU0xXRmswbC1OX3ZDaEtMQlE');">
+          <a>2013</a>
+        </div>
+  		  <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE');">
+          <a>2012</a>
+        </div>
+  		  <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE');">
+          <a>2011</a>
+        </div>
+  	  </div>
   </div>
  </div>
 </body>

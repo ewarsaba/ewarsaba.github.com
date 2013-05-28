@@ -1,9 +1,12 @@
+body {
+	background-image:url('../bg/1.jpg');
+}
+
 .name, .tagline, .links a {
 	font-family: 'Open Sans Light', 'Open Sans', sans-serif; 
 }
 
-.name {
-	margin-top: 70%; 
+.name { 
 	color: #333333;
 	font-size: 2.5em; 
 	font-weight: bold;
@@ -16,49 +19,55 @@
 }
 
 .nametag {
-	float: left;
-	margin-right:2em;s
-	text-align: right
+	background-color: #eeeeee;
+	text-align: left;
+	padding: 0.5em;
 }
 
 .main {
-	margin: 0 auto;
-	margin-top: 5%;
 	text-align:left;
-	width:50%;
 }
 
 .links {
-	float: left; 
 	text-align: left
 }
 
-.links a {
+.link, .album {
+	background-color: #eeeeee;
+	padding: 0.5em;
+	margin-bottom: 0.8em;
+	margin-top: 0.8em;
+	cursor: pointer;
+}
+
+
+.link a {
 	font-size: 2em;
 	text-decoration: none;
 	line-height: 32px;
-}
-
-.albums a {
-	font-size: 1.5em;
-	text-decoration: none;
-	line-height: 24px;
-	margin-left: 2em;
-}
-
-.links a:link, .links a:visited {
 	color: #333333;
 }
-.links a:hover {
-	color: #FF8C00;
+
+.link:hover, .link:hover a, .album:hover, .album:hover a {
+	background-color: #333333;
+	color: #eeeeee;
 }
 
-.links img {
+.link img {
 	vertical-align: middle;
 	border:none;
 }
 
-.links div {
-	margin-bottom: 1em;
-	margin-top: 1em;
+.album a {
+	font-size: 1.5em;
+	text-decoration: none;
+	line-height: 24px;
+	margin-left: 1em;
+	text-align: left;
+	color: #333333;
 }
+
+.album {
+	margin-left: 4em;
+}
+
