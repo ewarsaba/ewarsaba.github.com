@@ -19,7 +19,7 @@ body {
 }
 
 .nametag {
-	background-color: #eeeeee;
+	background-color: rgba(238,238,238,0.85);
 	text-align: left;
 	padding: 0.5em;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .link, .album {
-	background-color: #eeeeee;
+	background-color: rgba(238,238,238,0.85);
 	padding: 0.5em;
 	margin-bottom: 0.8em;
 	margin-top: 0.8em;
@@ -48,8 +48,11 @@ body {
 	color: #333333;
 }
 
-.link:hover, .link:hover a, .album:hover, .album:hover a {
-	background-color: #333333;
+.link:hover, .album:hover {
+	background-color: rgba(34,34,34,0.85);
+}
+
+.link:hover a, .album:hover a {
 	color: #eeeeee;
 }
 
