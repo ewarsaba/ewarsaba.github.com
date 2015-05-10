@@ -4,6 +4,12 @@ a {
 	font-style: normal;
 }
 
+@media print {
+    a {
+    	color: #333;
+    }
+}
+
 .main {
 	width: 55em;
 	margin: auto;
