@@ -151,4 +151,5 @@ a {
 
 .job .job-company, .job .job-title {
 	overflow: auto;
+	clear: both;
 }
