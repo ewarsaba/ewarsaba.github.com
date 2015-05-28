@@ -1,98 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Eric Warsaba</title>
-  <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="Eric Warsaba, Software Engineer" />
-  <meta content="en-us" http-equiv="Content-Language" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:light" />
-  <script src="js/jquery.js" style=""></script>
-  <script src="js/index.js" style=""></script>
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29646367-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  function toggle(id) {
-	var ele = document.getElementById(id);
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
-  	}
-	else {
-		ele.style.display = "block";
-	}
-} 
-</script>
-</head>
-
-<body>
-
-<div class="main">
-	<div class="nametag">
-	  <div class="name">eric warsaba</div>
-	  <div class="tagline">software engineer</div>
-	</div>
-
-
-  <div class="links">
-      <div class="link" onclick="location.href='resume.htm';">
-        <a><img alt="Resume" title="Resume" src="img/resume.png" /> resume</a>
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Eric Warsaba</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+      <script type="text/javascript">
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-29646367-1']);
+         _gaq.push(['_trackPageview']);
+         
+         (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+         
+         function toggle(id) {
+         var ele = document.getElementById(id);
+         if(ele.style.display == "block") {
+               ele.style.display = "none";
+           }
+         else {
+           ele.style.display = "block";
+         }
+         } 
+      </script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="name">eric warsaba</div>
+         <div class="title">software engineer</div>
+         <a class="btn" href="resume.htm"><img src="icons/resume.png"> resume</a>
+         <a class="btn" href="mailto:eric@warsaba.com"><img src="icons/email.png"> email</a>
+         <a class="btn" href="http://ca.linkedin.com/in/ewarsaba" target="_blank"><img src="icons/linkedin.png"> linkedin</a>
+         <a class="btn" href="http://twitter.com/ewarsaba" target="_blank"><img src="icons/twitter.png"> twitter</a>
+         <a class="btn" href="https://github.com/ewarsaba" target="_blank"><img src="icons/github.png"> github</a>
+         <a class="btn" href="http://www.last.fm/user/ewarsaba" target="_blank"><img src="icons/lastfm.png"> last.fm</a>
+         <div>
+            <a class="btn" href="javascript:toggle('albums');"><img src="icons/headphones.png"> album ratings</a>
+            <div id="albums" class="albums-links" style="display: none">
+               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dHdVR0cydnhPaEpXZkpaUUlYSkFxc3c&usp=sharing" target="_blank">2015</a></div>
+               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGplVEtlekFUNFdrUHQ0YzVBUnFmcXc" target="_blank">2014</a></div>
+               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dFplOUNlU0xXRmswbC1OX3ZDaEtMQlE" target="_blank">2013</a></div>
+               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE" target="_blank">2012</a></div>
+               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE" target="_blank">2011</a></div>
+            </div>
+         </div>
       </div>
-
-      <div class="link" onclick="location.href='mailto:eric@warsaba.com';">
-        <a><img alt="Email" title="Contact me via email" src="img/email.png" /> email</a>
-      </div>
-
-      <div class="link"  onclick="window.open('https://github.com/ewarsaba');">
-        <a><img alt="github" title="Check me out on github" src="img/github.png" /> github</a>
-      </div>
-
-      <div class="link" onclick="window.open('http://twitter.com/ewarsaba');">
-        <a><img alt="Twitter" title="Follow me on Twitter" src="img/twitter.png" /> twitter</a>
-      </div>
-
-      <div class="link" onclick="window.open('http://ca.linkedin.com/in/ewarsaba');">
-        <a><img alt="LinkedIn" title="Add me on LinkedIn" src="img/linkedin.png" /> linkedin</a>
-      </div>
-
-      <div class="link" onclick="window.open('http://www.last.fm/user/ewarsaba');">
-        <a><img alt="Last.fm" title="Last.fm Profile" src="img/lastfm.png" /> last.fm</a>
-      </div>
-      
-      <div class="link" onclick="javascript:toggle('albums');">
-        <a><img alt="Albums" title="Album Ratings" src="img/music.png" /> album ratings</a>
-      </div>
-	  
-  	  <div id="albums" class="albums" style="display:none">
-        <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dHdVR0cydnhPaEpXZkpaUUlYSkFxc3c&usp=sharing');">
-          <a>2015</a>
-        </div>
-        <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGplVEtlekFUNFdrUHQ0YzVBUnFmcXc');">
-          <a>2014</a>
-        </div>
-  		  <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dFplOUNlU0xXRmswbC1OX3ZDaEtMQlE');">
-          <a>2013</a>
-        </div>
-  		  <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE');">
-          <a>2012</a>
-        </div>
-  		  <div class="album" onclick="window.open('https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE');">
-          <a>2011</a>
-        </div>
-  	  </div>
-  </div>
- </div>
-</body>
+   </body>
 </html>

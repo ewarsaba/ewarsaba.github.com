@@ -1,76 +1,80 @@
+html {
+    height: 100%;
+}
+
+.name {
+    display: block;
+    font-size: 6em;
+    font-weight: 600;
+}
+
+.title {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+html {
+    font-family: sans-serif;
+}
 body {
-	background-size: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+    color: #fff;
+    background-color: #003D7E;
+    min-height: 100%;
+    text-align: center;
 }
 
-.name, .tagline, .links a {
-	font-family: 'Open Sans Light', 'Open Sans', sans-serif; 
+.container {
+    padding: 28px 20px;
 }
 
-.name { 
-	color: #333333;
-	font-size: 2.5em; 
-	font-weight: bold;
+a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.tagline {
-	color: #333333;
-	font-size: 1.5em; 
-	font-style: italic;
+.albums-links {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 250px;
 }
 
-.nametag {
-	background-color: rgba(238,238,238,0.85);
-	text-align: left;
-	padding: 0.5em;
+.albums-links a {
+    font-weight: 400;
+    font-size: 2em;
 }
 
-.main {
-	text-align:left;
+.albums-links a:hover {
+    color: #EC6E21;
 }
 
-.links {
-	text-align: left
+.albums-links div {
+    margin-top: 7px;
 }
-
-.link, .album {
-	background-color: rgba(238,238,238,0.85);
-	padding: 0.5em;
-	margin-bottom: 0.8em;
-	margin-top: 0.8em;
-	cursor: pointer;
+.btn {
+    padding: 12px 14px 10px;
+    height: 70px;
+    width: 250px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #EC6E21;
+    border-bottom: 5px solid #D95600;
+    border-radius: 10px;
+    margin: 10px 30px;
 }
-
-
-.link a {
-	font-size: 2em;
-	text-decoration: none;
-	line-height: 32px;
-	color: #333333;
+.btn img {
+    margin: 0 auto;
+    height: 40px;
 }
-
-.link:hover, .album:hover {
-	background-color: rgba(34,34,34,0.85);
+.btn:hover, .btn:focus {
+    background-color: #E36900;
+    border-bottom: 3px solid #B73400;
+    color: #fff;
 }
-
-.link:hover a, .album:hover a {
-	color: #eeeeee;
-}
-
-.link img {
-	vertical-align: middle;
-	border:none;
-}
-
-.album a {
-	font-size: 1.5em;
-	text-decoration: none;
-	line-height: 24px;
-	margin-left: 1em;
-	text-align: left;
-	color: #333333;
-}
-
-.album {
-	margin-left: 4em;
-}
-
