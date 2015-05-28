@@ -30,6 +30,7 @@ body {
 
 .container {
     padding: 10px 10px;
+    max-width: 600px;
 }
 
 a {
@@ -66,7 +67,7 @@ a {
     background-color: #EC6E21;
     border-bottom: 5px solid #D95600;
     border-radius: 10px;
-    margin: 10px 30px;
+    margin: 10px 10px;
     text-align: left;
 }
 .btn img {
