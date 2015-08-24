@@ -6,9 +6,11 @@
       <title>Eric Warsaba</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/albums.css" type="text/css" charset="utf-8" />
-      <script type="text/javascript" src="../js/jquery.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="../js/underscore.js"></script>
       <script type="text/javascript">
          var _gaq = _gaq || [];
@@ -34,11 +36,22 @@
    </head>
    <body>
 
-      <h1></h1>
+      <ul class="nav nav-pills nav-justified">
+         <li class="active"><a data-toggle="pill" href="#albums2014">2014</a></li>
+         <li><a data-toggle="pill" href="#albums2013">2013</a></li>
+         <li><a data-toggle="pill" href="#albums2012">2012</a></li>
+         <li><a data-toggle="pill" href="#albums2011">2011</a></li>
+         <li><a data-toggle="pill" href="#albums2010">2010</a></li>
+         <li><a data-toggle="pill" href="#albums2009">2009</a></li>
+      </ul>
+
+      <div class="tab-content">
+         <div id="lists"></div>
+      </div>
 
       <script type="text/template" class="template">
 
-      <div class="year-list">
+      <div id="albums<%- rc.year %>" class="year-list tab-pane fade in <%- rc.state %>">
 
          <div class="year-header">
             Albums 2014
@@ -79,7 +92,9 @@
         var template = _.template(
             $( "script.template" ).html()
         );
-        var templateData = {
+        var albums2014 = {
+               year: 2014,
+               state: "active",
                albums: [
                      {
                        rank: 1,
@@ -264,9 +279,33 @@
 
                ]
         };
-        $( "h1" ).after(
-            template( templateData )
+
+        var albums2013 = {
+               year: 2013,
+               albums: [
+                     {
+                       rank: 29,
+                       cover: "http://userserve-ak.last.fm/serve/_/100894041/The+Physical+World.png",
+                       artist: "Death from Aboe 1979",
+                       title: "The Physical World"
+                     },
+                     {
+                       rank: 30,
+                       cover: "http://userserve-ak.last.fm/serve/_/100748913/Still+Life.jpg",
+                       artist: "Kevin Morby",
+                       title: "Still Life"
+                     }
+
+               ]
+        };
+
+        $( "#lists" ).after(
+            template( albums2013 )
+        );
+        $( "#lists" ).after(
+            template( albums2014 )
         );
     </script>
+
    </body>
 </html>
