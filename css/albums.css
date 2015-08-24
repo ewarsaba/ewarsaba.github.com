@@ -1,5 +1,8 @@
 body {
     font-size: 100%;
+    color: #ffffff;
+    background-color: #003D7E;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .year-list {
@@ -31,6 +34,7 @@ body {
     font-size: 10em; 
     width: 1.5em; 
     text-align: center; 
+    font-weight: 700;
 }
 
 .cover {
@@ -44,16 +48,43 @@ body {
 
 .separator {
     height:0;
-    border-top:4px solid #cccccc;
+    border-top:4px solid #EC6E21;
     font-size:0;
 }
 
 .artist {
     font-size: 3em;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .title {
     font-size: 3em;
     font-style: italic;
+    font-weight: 300;
+}
+
+.nav-pills li.active a, .nav-pills li.active a:focus, .nav-pills li.active a:hover {
+    background-color: #EC6E21;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+ul.nav li a:hover, ul.nav li a{
+    color: #FFFFFF;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+ul.nav li a:hover {
+    background-color: #ffffff;
+    color: #EC6E21;
+}
+
+.home-link {
+    font-size: 2em;
+    color: #eeeeee;
+}
+
+.home-link:hover {
+    color: #EC6E21;
 }
