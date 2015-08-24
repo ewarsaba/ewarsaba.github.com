@@ -48,7 +48,7 @@
 
          <div class="album" style="clear: both; overflow: auto; margin-bottom: 5em; height: 30em;">
             
-            <div class="rank" style="float: left; font-size: 10em; position: relative; top: 50%; transform: translateY(-50%);">
+            <div class="rank" style="float: left; font-size: 10em; width: 1.5em; text-align: center; position: relative; top: 50%; transform: translateY(-50%);">
                <%- album.rank %>
             </div>
             
@@ -75,37 +75,195 @@
 
 
       <script type="text/javascript">
-        // When rending an underscore template, we want top-level
-        // variables to be referenced as part of an object. For
-        // technical reasons (scope-chain search), this speeds up
-        // rendering; however, more importantly, this also allows our
-        // templates to look / feel more like our server-side
-        // templates that use the rc (Request Context / Colletion) in
-        // order to render their markup.
         _.templateSettings.variable = "rc";
-        // Grab the HTML out of our template tag and pre-compile it.
         var template = _.template(
             $( "script.template" ).html()
         );
-        // Define our render data (to be put into the "rc" variable).
         var templateData = {
-            albums: [
-                {
-                    rank: 1,
-                    cover: "http://userserve-ak.last.fm/serve/500/101854193/Run+The+Jewels+2+RTJ2.png",
-                    artist: "Run the Jewels",
-                    title: "Run the Jewels 2"
-                },
-                {
-                    rank: 2,
-                    cover: "http://userserve-ak.last.fm/serve/500/97224569/St+Vincent++Digital.png",
-                    artist: "St. Vincent",
-                    title: "St. Vincent"
-                }
-            ]
+               albums: [
+                     {
+                       rank: 1,
+                       cover: "http://userserve-ak.last.fm/serve/500/101854193/Run+The+Jewels+2+RTJ2.png",
+                       artist: "Run the Jewels",
+                       title: "Run the Jewels 2"
+                     },
+                     {
+                       rank: 2,
+                       cover: "http://userserve-ak.last.fm/serve/500/97224569/St+Vincent++Digital.png",
+                       artist: "St. Vincent",
+                       title: "St. Vincent"
+                     },
+                     {
+                       rank: 3,
+                       cover: "http://userserve-ak.last.fm/serve/500/101871659/The+Ape+of+God+Coverpng.png",
+                       artist: "Old Man Gloom",
+                       title: "The Ape of God"
+                     },
+                     {
+                       rank: 4,
+                       cover: "http://userserve-ak.last.fm/serve/500/100063831/Too+Bright.png",
+                       artist: "Perfume Genius",
+                       title: "Too Bright"
+                     },
+                     {
+                       rank: 5,
+                       cover: "http://userserve-ak.last.fm/serve/500/97973631/Here+and+Nowhere+Else.png",
+                       artist: "Cloud Nothings",
+                       title: "Here and Nowhere Else"
+                     },
+                     {
+                       rank: 6,
+                       cover: "http://userserve-ak.last.fm/serve/500/97169385/Black+Hours.png",
+                       artist: "Hamilton Leithauser",
+                       title: "Black Hours"
+                     },
+                     {
+                       rank: 7,
+                       cover: "http://userserve-ak.last.fm/serve/500/99430551/They+Want+My+Soul+High+Quality+PNG.png",
+                       artist: "Spoon",
+                       title: "They Want My Soul"
+                     },
+                     {
+                       rank: 8,
+                       cover: "http://userserve-ak.last.fm/serve/_/101212525/Plowing+into+the+Field+of+Love+PItFoL.png",
+                       artist: "Iceage",
+                       title: "Plowing Into the Field of Love"
+                     },
+                     {
+                       rank: 9,
+                       cover: "http://userserve-ak.last.fm/serve/500/98992841/and+then+you+shoot+your+cousin.jpg",
+                       artist: "The Roots",
+                       title: "...and then you shoot your cousin"
+                     },
+                     {
+                       rank: 10,
+                       cover: "http://userserve-ak.last.fm/serve/_/101434089/Our+Love.png",
+                       artist: "Caribou",
+                       title: "Our Love"
+                     },
+                     {
+                       rank: 11,
+                       cover: "http://userserve-ak.last.fm/serve/500/102284513/Lost+in+the+Dream.png",
+                       artist: "The War on Drugs",
+                       title: "Lost in the Dream"
+                     },
+                     {
+                       rank: 12,
+                       cover: "http://userserve-ak.last.fm/serve/_/101203447/Another+Language+PNG.png",
+                       artist: "They Will Destroy You",
+                       title: "Another Language"
+                     },
+                     {
+                       rank: 13,
+                       cover: "http://userserve-ak.last.fm/serve/_/101454665/Youre+Dead.png",
+                       artist: "Flying Lotus",
+                       title: "You're Dead!"
+                     },
+                     {
+                       rank: 14,
+                       cover: "http://userserve-ak.last.fm/serve/_/96364799/Fuck+Off+Get+Free+We+Pour+Light+On+Everything+fuckoffgetfreewepourlightoneve.png",
+                       artist: "Thee Silver Mt. Zion Memorial Orchestra",
+                       title: "Fuck Off Get Free We Pour Light On Everything"
+                     },
+                     {
+                       rank: 15,
+                       cover: "http://userserve-ak.last.fm/serve/_/97936793/Mess.png",
+                       artist: "Liars",
+                       title: "Mess"
+                     },
+                     {
+                       rank: 16,
+                       cover: "http://userserve-ak.last.fm/serve/_/99890533/Mended+With+Gold.jpg",
+                       artist: "The Rural Alberta Advantage",
+                       title: "Mended with Gold"
+                     },
+                     {
+                       rank: 17,
+                       cover: "http://userserve-ak.last.fm/serve/500/98261907/Deep+Fantasy.png",
+                       artist: "White Lung",
+                       title: "Deep Fantasy"
+                     },
+                     {
+                       rank: 18,
+                       cover: "http://userserve-ak.last.fm/serve/500/100758307/ALICE+IN+THUNDERDOME+aitd2.png",
+                       artist: "Rob Sonic",
+                       title: "Alice in Thunderdome"
+                     },
+                     {
+                       rank: 19,
+                       cover: "http://userserve-ak.last.fm/serve/500/97695169/I+Never+Learn.png",
+                       artist: "Lykke LI",
+                       title: "I Never Learn"
+                     },
+                     {
+                       rank: 20,
+                       cover: "http://userserve-ak.last.fm/serve/500/96384533/Transgender+Dysphoria+Blues.png",
+                       artist: "Against Me!",
+                       title: "Transgender Dysphoria Blues"
+                     },
+                     {
+                       rank: 21,
+                       cover: "http://userserve-ak.last.fm/serve/500/98517489/Do+It+Again+PNG.png",
+                       artist: "Röyksopp & Robyn",
+                       title: "Do It Again"
+                     },
+                     {
+                       rank: 22,
+                       cover: "http://userserve-ak.last.fm/serve/500/98165153/Shriek+HQ+png+image+1200x1200px.png",
+                       artist: "Wye Oak",
+                       title: "Shriek"
+                     },
+                     {
+                       rank: 23,
+                       cover: "http://userserve-ak.last.fm/serve/500/97344317/Nux+Vomica+NuxVomica.jpg",
+                       artist: "Nux Vomica",
+                       title: "Nux Vomica"
+                     },
+                     {
+                       rank: 24,
+                       cover: "http://userserve-ak.last.fm/serve/_/99276241/The+Next+Four+Years+HQ+PNG.png",
+                       artist: "United Nations",
+                       title: "The Next Four Years"
+                     },
+                     {
+                       rank: 25,
+                       cover: "http://userserve-ak.last.fm/serve/500/98690421/Easy+Pain+Coverpng.png",
+                       artist: "Young Widows",
+                       title: "Easy Pain"
+                     },
+                     {
+                       rank: 26,
+                       cover: "http://userserve-ak.last.fm/serve/500/101042733/This+Is+All+Yours+0.png",
+                       artist: "alt-J",
+                       title: "This Is All Yours"
+                     },
+                     {
+                       rank: 27,
+                       cover: "http://userserve-ak.last.fm/serve/500/98350083/The+Moon+Rang+Like+a+Bell.png",
+                       artist: "Hundred Waters",
+                       title: "The Moon Rang Like A Bell"
+                     },
+                     {
+                       rank: 28,
+                       cover: "http://userserve-ak.last.fm/serve/500/99019999/To+Be+Kind+Cover.png",
+                       artist: "Swans",
+                       title: "To Be Kind"
+                     },
+                     {
+                       rank: 29,
+                       cover: "http://userserve-ak.last.fm/serve/_/100894041/The+Physical+World.png",
+                       artist: "Death from Aboe 1979",
+                       title: "The Physical World"
+                     },
+                     {
+                       rank: 30,
+                       cover: "http://userserve-ak.last.fm/serve/_/100748913/Still+Life.jpg",
+                       artist: "Kevin Morby",
+                       title: "Still Life"
+                     }
+
+               ]
         };
-        // Render the underscore template and inject it after the H1
-        // in our current DOM.
         $( "h1" ).after(
             template( templateData )
         );
