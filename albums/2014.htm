@@ -32,34 +32,34 @@
          } 
       </script>
    </head>
-   <body style="font-size: 100%">
+   <body>
 
       <h1></h1>
 
       <script type="text/template" class="template">
 
-      <div style="width: 70em; margin: 0 auto;">
+      <div class="year-list">
 
-         <div style="text-align: center; font-size: 5em; font-weight: bold">
+         <div class="year-header">
             Albums 2014
          </div>
 
       <% _.each( rc.albums, function( album ){ %>
 
-         <div class="album" style="clear: both; overflow: auto; margin-bottom: 5em; height: 30em;">
+         <div class="album">
             
-            <div class="rank" style="float: left; font-size: 10em; width: 1.5em; text-align: center; position: relative; top: 50%; transform: translateY(-50%);">
+            <div class="rank">
                <%- album.rank %>
             </div>
             
-            <img style="float: left; width: 30em; position: relative; top: 50%; transform: translateY(-50%);" src=<%= album.cover %> />
+            <img class="cover" src=<%= album.cover %> />
 
-            <div class="album_info" style="float: left; width: 20em; margin-left: 1em; position: relative; top: 50%; transform: translateY(-50%);">
+            <div class="album-info">
                <div class="artist">
                   <%- album.artist %>
                </div>
 
-               <div class="aligncenter" style="height:0;border-top:2px solid #cccccc;font-size:0;">-</div> 
+               <div class="separator">-</div> 
 
                <div class="title">
                   <%- album.title %>

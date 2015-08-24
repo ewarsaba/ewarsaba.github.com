@@ -1,0 +1,59 @@
+body {
+    font-size: 100%;
+}
+
+.year-list {
+    width: 80em; 
+    margin: 0 auto;
+}
+
+.year-header {
+    text-align: center; 
+    font-size: 5em; 
+    font-weight: bold;
+}
+
+.album {
+    clear: both; 
+    overflow: auto; 
+    margin-bottom: 5em; 
+    height: 30em;
+}
+
+.rank, .cover, .album-info {
+    float: left;
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%);
+
+}
+.rank {
+    font-size: 10em; 
+    width: 1.5em; 
+    text-align: center; 
+}
+
+.cover {
+    width: 30em; 
+}
+
+.album-info {
+    width: 30em; 
+    margin-left: 1em; 
+}
+
+.separator {
+    height:0;
+    border-top:4px solid #cccccc;
+    font-size:0;
+}
+
+.artist {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 3em;
+    font-style: italic;
+}
