@@ -12,6 +12,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="../js/underscore.js"></script>
+      <script type="text/javascript" src="../js/flowtype.js"></script>
       <script type="text/javascript">
          var _gaq = _gaq || [];
          _gaq.push(['_setAccount', 'UA-29646367-1']);
@@ -66,9 +67,7 @@
                <%- album.rank %>
             </div>
             
-            <a href=<%- album.spotify %> target="_blank">
                <img class="cover" src=<%= album.cover %> />
-            </a>
             
 
             <div class="album-info">
@@ -339,6 +338,20 @@
         $( "#lists" ).after(
             template( albums2014 )
         );
+
+        $('body').flowtype();
+
+        $('.rank').flowtype({
+            fontRatio: 1.5
+        });
+
+        $('.artist').flowtype({
+            fontRatio: 9
+        });
+
+        $('.title').flowtype({
+            fontRatio: 9
+        });
     </script>
 
    </body>

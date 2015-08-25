@@ -1,49 +1,47 @@
 body {
-    font-size: 100%;
     color: #ffffff;
     background-color: #003D7E;
     font-family: 'Open Sans', sans-serif;
 }
 
 .year-list {
-    width: 80em; 
+    width: 66%; 
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .year-header {
     text-align: center; 
-    font-size: 5em; 
+    font-size: 1em; 
     font-weight: bold;
 }
 
 .album {
     clear: both; 
     overflow: auto; 
-    margin-bottom: 5em; 
-    height: 30em;
+    margin-bottom: 30px; 
 }
 
 .rank, .cover, .album-info {
     float: left;
-    position: relative; 
-    top: 50%; 
-    transform: translateY(-50%);
 
 }
 .rank {
-    font-size: 10em; 
-    width: 1.5em; 
+    width: 20%;
+    font-size: 2em; 
     text-align: center; 
     font-weight: 700;
 }
 
 .cover {
-    width: 30em; 
+    width: 40%;
+    max-width: 300px; 
 }
 
 .album-info {
-    width: 30em; 
-    margin-left: 1em; 
+    width: 40%;
+    max-width: 300px; 
+    padding-left: 10px; 
 }
 
 .separator {
@@ -53,25 +51,25 @@ body {
 }
 
 .artist {
-    font-size: 3em;
+    font-size: 1em;
     font-weight: 600;
 }
 
 .title {
-    font-size: 3em;
+    font-size: 1em;
     font-style: italic;
     font-weight: 300;
 }
 
 .nav-pills li.active a, .nav-pills li.active a:focus, .nav-pills li.active a:hover {
     background-color: #EC6E21;
-    font-size: 3em;
+    font-size: 1em;
     font-weight: 600;
 }
 
 ul.nav li a:hover, ul.nav li a{
     color: #FFFFFF;
-    font-size: 3em;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -81,7 +79,7 @@ ul.nav li a:hover {
 }
 
 .home-link {
-    font-size: 2em;
+    font-size: 1em;
     color: #eeeeee;
 }
 
