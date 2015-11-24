@@ -56,7 +56,7 @@
       <div id="albums<%- rc.year %>" class="year-list tab-pane fade in <%- rc.state %>">
 
          <div class="year-header">
-            Albums 2014
+            Albums <%- rc.year %>
          </div>
 
       <% _.each( rc.albums, function( album ){ %>
@@ -67,7 +67,7 @@
                <%- album.rank %>
             </div>
             
-               <img class="cover" src=<%= album.cover %> />
+               <a href=<%= album.spotify %> target="_blank"><img class="cover" src=<%= album.cover %> /></a>
             
 
             <div class="album-info">
@@ -101,210 +101,210 @@
                albums: [
                      {
                        rank: 1,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/5591506667b045aac54e13f41def97b2.jpg",
                        artist: "Run the Jewels",
                        title: "Run the Jewels 2",
                        spotify: "http://open.spotify.com/album/2lPYlP4eumsjz6LBG8GCbG"
                      },
                      {
                        rank: 2,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/ee337bb61ccb47a0c749fe759c88beff.jpg",
                        artist: "St. Vincent",
                        title: "St. Vincent",
                        spotify: "http://open.spotify.com/album/2CJnMhwEEkS8R1ctgt5llf"
                      },
                      {
                        rank: 3,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/f91f6799a39d4c59cc564bb1a157e7ea.jpg",
                        artist: "Old Man Gloom",
                        title: "The Ape of God",
                        spotify: "http://open.spotify.com/album/5bTs4HY0zZaG7BBUvLtED6"
                      },
                      {
                        rank: 4,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/f6e0b24e3f704bc4cb8dc0b84fcb28b0.jpg",
                        artist: "Perfume Genius",
                        title: "Too Bright",
                        spotify: "http://open.spotify.com/album/28FxHb9OJRzAch4DwUUsaT"
                      },
                      {
                        rank: 5,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/5c1c150f18b14cc6ccfbbf6224d30f89.jpg",
                        artist: "Cloud Nothings",
                        title: "Here and Nowhere Else",
                        spotify: "http://open.spotify.com/album/3NNSJt3gWSmPmnjCwZyLA5"
                      },
                      {
                        rank: 6,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/fd44603f59f84031c097b9e68bf54dc0.jpg",
                        artist: "Hamilton Leithauser",
                        title: "Black Hours",
                        spotify: "http://open.spotify.com/album/6okbkXtZuUlbVmADpjxNiA"
                      },
                      {
                        rank: 7,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/ebb5b41eca7a4b87cb5e22a4a7ffbd74.jpg",
                        artist: "Spoon",
                        title: "They Want My Soul",
                        spotify: "http://open.spotify.com/album/55TZx6GWm1hlEbRgkGRjma"
                      },
                      {
                        rank: 8,
-                       cover: "http://userserve-ak.last.fm/serve/_/101212525/Plowing+into+the+Field+of+Love+PItFoL.png",
+                       cover: "http://img2-ak.lst.fm/i/u/8d961d39fa414a71ca524786bd820b9f.jpg",
                        artist: "Iceage",
                        title: "Plowing Into the Field of Love",
                        spotify: "http://open.spotify.com/album/2zFpmXJsyl4HnMY1hZcfIe"
                      },
                      {
                        rank: 9,
-                       cover: "http://userserve-ak.last.fm/serve/500/98992841/and+then+you+shoot+your+cousin.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/222527e2e7344bbacbe8ff78abcbb28d.jpg",
                        artist: "The Roots",
                        title: "...and then you shoot your cousin",
                        spotify: "http://open.spotify.com/album/6kYqws8vRcaUKTjFnJRb4X"
                      },
                      {
                        rank: 10,
-                       cover: "http://userserve-ak.last.fm/serve/_/101434089/Our+Love.png",
+                       cover: "http://img2-ak.lst.fm/i/u/fc958d8e7e0e47fdc766d444d90dc13f.jpg",
                        artist: "Caribou",
                        title: "Our Love",
                        spotify: "http://open.spotify.com/album/5r4nz5LZHeGUcZCrWbfWkx"
                      },
                      {
                        rank: 11,
-                       cover: "http://userserve-ak.last.fm/serve/500/102284513/Lost+in+the+Dream.png",
+                       cover: "http://img2-ak.lst.fm/i/u/e38749e9fa8e4e0ece3553b248879823.jpg",
                        artist: "The War on Drugs",
                        title: "Lost in the Dream",
                        spotify: "http://open.spotify.com/album/14xxjLlbGy8ACm4MorBjD5"
                      },
                      {
                        rank: 12,
-                       cover: "http://userserve-ak.last.fm/serve/_/101203447/Another+Language+PNG.png",
+                       cover: "http://img2-ak.lst.fm/i/u/81d82fe5efe74f66cf55480288bd07f5.jpg",
                        artist: "They Will Destroy You",
                        title: "Another Language",
                        spotify: "http://open.spotify.com/album/7JbUvdIr1yepIxZy9rt3un"
                      },
                      {
                        rank: 13,
-                       cover: "http://userserve-ak.last.fm/serve/_/101454665/Youre+Dead.png",
+                       cover: "http://img2-ak.lst.fm/i/u/9715f15b9c7646f7c6bd919cb029fa7c.jpg",
                        artist: "Flying Lotus",
                        title: "You're Dead!",
                        spotify: "http://open.spotify.com/album/29luvT98TnqHjVDYSRbbrj"
                      },
                      {
                        rank: 14,
-                       cover: "http://userserve-ak.last.fm/serve/_/96364799/Fuck+Off+Get+Free+We+Pour+Light+On+Everything+fuckoffgetfreewepourlightoneve.png",
+                       cover: "http://img2-ak.lst.fm/i/u/a2596a8e512f4143c159c947664c77e3.jpg",
                        artist: "Thee Silver Mt. Zion Memorial Orchestra",
                        title: "Fuck Off Get Free We Pour Light On Everything",
                        spotify: "http://open.spotify.com/album/12jvcjKhojRTR5OUJevLb6"
                      },
                      {
                        rank: 15,
-                       cover: "http://userserve-ak.last.fm/serve/_/97936793/Mess.png",
+                       cover: "http://img2-ak.lst.fm/i/u/c196e08f7cc84e5fcece9e4da239252e.jpg",
                        artist: "Liars",
                        title: "Mess",
                        spotify: "http://open.spotify.com/album/5Yyt7GBe2YwY3ddjsbv1Em"
                      },
                      {
                        rank: 16,
-                       cover: "http://userserve-ak.last.fm/serve/_/99890533/Mended+With+Gold.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/5b11e3333180470dc79ef5c9488f8124.jpg",
                        artist: "The Rural Alberta Advantage",
                        title: "Mended with Gold",
                        spotify: "http://open.spotify.com/album/5U4WtXJvVognNQqDyjKxYx"
                      },
                      {
                        rank: 17,
-                       cover: "http://userserve-ak.last.fm/serve/500/98261907/Deep+Fantasy.png",
+                       cover: "http://img2-ak.lst.fm/i/u/bbd19590727e4959c9067cce8165a43b.jpg",
                        artist: "White Lung",
                        title: "Deep Fantasy",
                        spotify: "http://open.spotify.com/album/64w2PSTImdSXDfoc7TqARQ"
                      },
                      {
                        rank: 18,
-                       cover: "http://userserve-ak.last.fm/serve/500/100758307/ALICE+IN+THUNDERDOME+aitd2.png",
+                       cover: "http://img2-ak.lst.fm/i/u/c9db3cb1803f4248c23769519e8ea931.jpg",
                        artist: "Rob Sonic",
                        title: "Alice in Thunderdome",
                        spotify: "http://open.spotify.com/album/7Ga8J16H7NqrnC4z4MHbFZ"
                      },
                      {
                        rank: 19,
-                       cover: "http://userserve-ak.last.fm/serve/500/97695169/I+Never+Learn.png",
+                       cover: "http://img2-ak.lst.fm/i/u/2bfecee1173a48f5c804f38f42276e41.jpg",
                        artist: "Lykke LI",
                        title: "I Never Learn",
                        spotify: "http://open.spotify.com/album/4fGqfyineAZmulNxgitERh"
                      },
                      {
                        rank: 20,
-                       cover: "http://userserve-ak.last.fm/serve/500/96384533/Transgender+Dysphoria+Blues.png",
+                       cover: "http://img2-ak.lst.fm/i/u/cd410c28de9f4158c1acb58774ff2e61.jpg",
                        artist: "Against Me!",
                        title: "Transgender Dysphoria Blues",
                        spotify: "http://open.spotify.com/album/4f5QFycCas16VVeNNXtJoH"
                      },
                      {
                        rank: 21,
-                       cover: "http://userserve-ak.last.fm/serve/500/98517489/Do+It+Again+PNG.png",
+                       cover: "http://img2-ak.lst.fm/i/u/cb0516b84ad44a4eca4fbab4e982b53a.jpg",
                        artist: "Röyksopp & Robyn",
                        title: "Do It Again",
                        spotify: "http://open.spotify.com/album/5eee2WTHHXLjsuZJ0WZ1kL"
                      },
                      {
                        rank: 22,
-                       cover: "http://userserve-ak.last.fm/serve/500/98165153/Shriek+HQ+png+image+1200x1200px.png",
+                       cover: "http://img2-ak.lst.fm/i/u/2a125ae99afb4caacc377d3ce47b96b8.jpg",
                        artist: "Wye Oak",
                        title: "Shriek",
                        spotify: "http://open.spotify.com/album/0otxl4NsvWDdckqTGX8tKn"
                      },
                      {
                        rank: 23,
-                       cover: "http://userserve-ak.last.fm/serve/500/97344317/Nux+Vomica+NuxVomica.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/65b7781a5d414864c88ba12a8d3b4e9a.jpg",
                        artist: "Nux Vomica",
                        title: "Nux Vomica",
                        spotify: "http://open.spotify.com/album/1M7jKEZHhLo8psVGZolfmb"
                      },
                      {
                        rank: 24,
-                       cover: "http://userserve-ak.last.fm/serve/_/99276241/The+Next+Four+Years+HQ+PNG.png",
+                       cover: "http://img2-ak.lst.fm/i/u/7c7ba00cbef1461dc6a15578d2298de0.jpg",
                        artist: "United Nations",
                        title: "The Next Four Years",
                        spotify: "http://open.spotify.com/album/3bWhwSalV8hFBvlZ9Ny44R"
                      },
                      {
                        rank: 25,
-                       cover: "http://userserve-ak.last.fm/serve/500/98690421/Easy+Pain+Coverpng.png",
+                       cover: "http://img2-ak.lst.fm/i/u/abf2a515146d4a4bcad09ef5417df57e.jpg",
                        artist: "Young Widows",
                        title: "Easy Pain",
                        spotify: "http://open.spotify.com/album/2BzGdQ16lOid9w2mOuew4g"
                      },
                      {
                        rank: 26,
-                       cover: "http://userserve-ak.last.fm/serve/500/101042733/This+Is+All+Yours+0.png",
+                       cover: "http://img2-ak.lst.fm/i/u/336e206f9bca4d44cd17c51f90b09385.jpg",
                        artist: "alt-J",
                        title: "This Is All Yours",
                        spotify: "http://open.spotify.com/album/4oktVvRuO1In9B7Hz0xm0a"
                      },
                      {
                        rank: 27,
-                       cover: "http://userserve-ak.last.fm/serve/500/98350083/The+Moon+Rang+Like+a+Bell.png",
+                       cover: "http://img2-ak.lst.fm/i/u/6c48846bbe5f4d8bcd4d57be186d039d.jpg",
                        artist: "Hundred Waters",
                        title: "The Moon Rang Like A Bell",
                        spotify: "http://open.spotify.com/album/051I8OUCXMiEnua64QQKy3"
                      },
                      {
                        rank: 28,
-                       cover: "http://userserve-ak.last.fm/serve/500/99019999/To+Be+Kind+Cover.png",
+                       cover: "http://img2-ak.lst.fm/i/u/718aa1a450304ffbcf0c3369a7ad6606.jpg",
                        artist: "Swans",
                        title: "To Be Kind",
                        spotify: "http://open.spotify.com/album/0QWLvgrYwVMUVOHq3vvq9z"
                      },
                      {
                        rank: 29,
-                       cover: "http://userserve-ak.last.fm/serve/_/100894041/The+Physical+World.png",
+                       cover: "http://img2-ak.lst.fm/i/u/2ac55d6ad4ef4ea4ceb10dd5174a460e.jpg",
                        artist: "Death from Above 1979",
                        title: "The Physical World",
                        spotify: "http://open.spotify.com/album/6pkHRqnjCeXjQUDVbHzMlD"
                      },
                      {
                        rank: 30,
-                       cover: "http://userserve-ak.last.fm/serve/_/100748913/Still+Life.jpg",
+                       cover: "http://img2-ak.lst.fm/i/u/e2024aab7bb347e7c7a08dadeda54083.jpg",
                        artist: "Kevin Morby",
                        title: "Still Life",
                        spotify: "https://open.spotify.com/album/3tQTQZ8oy2IDwpmkYP08Fr"
@@ -317,16 +317,214 @@
                year: 2013,
                albums: [
                      {
+                       rank: 1,
+                       cover: "http://img2-ak.lst.fm/i/u/47fdb3978d894402882487a3cfbf36ec.jpg",
+                       artist: "Son Lux",
+                       title: "Lanterns",
+                       spotify: "http://open.spotify.com/album/2lPYlP4eumsjz6LBG8GCbG"
+                     },
+                     {
+                       rank: 2,
+                       cover: "http://img2-ak.lst.fm/i/u/c479e62d44ea4df7bf123f42e4a418e1.jpg",
+                       artist: "Jon Hopkins",
+                       title: "Immunity",
+                       spotify: "http://open.spotify.com/album/2CJnMhwEEkS8R1ctgt5llf"
+                     },
+                     {
+                       rank: 3,
+                       cover: "http://img2-ak.lst.fm/i/u/f943050379d6486b8646a7ae6334f04d.jpg",
+                       artist: "Run the Jewels",
+                       title: "Run the Jewels",
+                       spotify: "http://open.spotify.com/album/5bTs4HY0zZaG7BBUvLtED6"
+                     },
+                     {
+                       rank: 4,
+                       cover: "http://img2-ak.lst.fm/i/u/cb24a79ba3044ca7ccc23e4047f254d6.jpg",
+                       artist: "Nils Frahm",
+                       title: "Spaces",
+                       spotify: "http://open.spotify.com/album/28FxHb9OJRzAch4DwUUsaT"
+                     },
+                     {
+                       rank: 5,
+                       cover: "http://img2-ak.lst.fm/i/u/907af6d9d5344e6685e7fa37b099e180.jpg",
+                       artist: "The National",
+                       title: "Trouble Will Find Me",
+                       spotify: "http://open.spotify.com/album/3NNSJt3gWSmPmnjCwZyLA5"
+                     },
+                     {
+                       rank: 6,
+                       cover: "http://img2-ak.lst.fm/i/u/8a6a1123bb124e4890f20c956a63e734.jpg",
+                       artist: "Deadheaven",
+                       title: "Sunbather",
+                       spotify: "http://open.spotify.com/album/5r4nz5LZHeGUcZCrWbfWkx"
+                     },
+                     {
+                       rank: 7,
+                       cover: "http://img2-ak.lst.fm/i/u/bc2ed40affae4adf82238e8b4f6bae85.jpg",
+                       artist: "Fuck Button",
+                       title: "Slow Focus",
+                       spotify: "http://open.spotify.com/album/6okbkXtZuUlbVmADpjxNiA"
+                     },
+                     {
+                       rank: 8,
+                       cover: "http://img2-ak.lst.fm/i/u/30ee1348cc31442780e464746f726b39.jpg",
+                       artist: "Moderat",
+                       title: "II",
+                       spotify: "http://open.spotify.com/album/55TZx6GWm1hlEbRgkGRjma"
+                     },
+                     {
+                       rank: 9,
+                       cover: "http://img2-ak.lst.fm/i/u/47b6fae1ebdf471fc73592084aec5d9b.jpg",
+                       artist: "Kanye West",
+                       title: "Yeezus",
+                       spotify: "http://open.spotify.com/album/2zFpmXJsyl4HnMY1hZcfIe"
+                     },
+                     {
+                       rank: 10,
+                       cover: "http://img2-ak.lst.fm/i/u/7fe1e29a571f4fd1bb501f7e7308156e.jpg",
+                       artist: "James Blake",
+                       title: "Overgrown",
+                       spotify: "http://open.spotify.com/album/6kYqws8vRcaUKTjFnJRb4X"
+                     },
+                     {
+                       rank: 11,
+                       cover: "http://img2-ak.lst.fm/i/u/c2999e1e71ae4ca3cc37e631e07a1820.jpg",
+                       artist: "Darkside",
+                       title: "Psychic",
+                       spotify: "http://open.spotify.com/album/14xxjLlbGy8ACm4MorBjD5"
+                     },
+                     {
+                       rank: 12,
+                       cover: "http://img2-ak.lst.fm/i/u/3d9751acd7ec418fb9682ce72b4a174d.jpg",
+                       artist: "Vampire Weekend",
+                       title: "Modern Vampires of the City",
+                       spotify: "http://open.spotify.com/album/7JbUvdIr1yepIxZy9rt3un"
+                     },
+                     {
+                       rank: 13,
+                       cover: "http://img2-ak.lst.fm/i/u/09053066fa8744e7a66ed5d29ac64736.jpg",
+                       artist: "Kurt Vile",
+                       title: "Walkin on a Pretty Daze",
+                       spotify: "http://open.spotify.com/album/29luvT98TnqHjVDYSRbbrj"
+                     },
+                     {
+                       rank: 14,
+                       cover: "http://img2-ak.lst.fm/i/u/c086984bcae844e8945572fa152043d7.jpg",
+                       artist: "Cult of Luna",
+                       title: "Vertikal",
+                       spotify: "http://open.spotify.com/album/12jvcjKhojRTR5OUJevLb6"
+                     },
+                     {
+                       rank: 15,
+                       cover: "http://img2-ak.lst.fm/i/u/5392c7070c0247a8c78142d11beca877.jpg",
+                       artist: "Burial",
+                       title: "Rival Dealer",
+                       spotify: "http://open.spotify.com/album/5Yyt7GBe2YwY3ddjsbv1Em"
+                     },
+                     {
+                       rank: 16,
+                       cover: "http://img2-ak.lst.fm/i/u/5e351ad88ca9495f8d3d6452083296aa.jpg",
+                       artist: "Tim Hecker",
+                       title: "Virgins",
+                       spotify: "http://open.spotify.com/album/5U4WtXJvVognNQqDyjKxYx"
+                     },
+                     {
+                       rank: 17,
+                       cover: "http://img2-ak.lst.fm/i/u/3bc0ff68aeb8414897e6f0d13908fdd8.jpg",
+                       artist: "Arcade Fire",
+                       title: "Reflektor",
+                       spotify: "http://open.spotify.com/album/64w2PSTImdSXDfoc7TqARQ"
+                     },
+                     {
+                       rank: 18,
+                       cover: "http://img2-ak.lst.fm/i/u/497950ed1a94462b8424035fb586dc81.jpg",
+                       artist: "Deerhunter",
+                       title: "Monomania",
+                       spotify: "http://open.spotify.com/album/7Ga8J16H7NqrnC4z4MHbFZ"
+                     },
+                     {
+                       rank: 19,
+                       cover: "http://img2-ak.lst.fm/i/u/a107b54f27c441a7a745332f5510f271.jpg",
+                       artist: "Boards of Canada",
+                       title: "Tomorrow's Harvest",
+                       spotify: "http://open.spotify.com/album/4fGqfyineAZmulNxgitERh"
+                     },
+                     {
+                       rank: 20,
+                       cover: "http://img2-ak.lst.fm/i/u/8040d75acb4049a2bdaf276a467da55e.jpg",
+                       artist: "Queens of the Stone Age",
+                       title: "...Like Clockwork",
+                       spotify: "http://open.spotify.com/album/4f5QFycCas16VVeNNXtJoH"
+                     },
+                     {
+                       rank: 21,
+                       cover: "http://img2-ak.lst.fm/i/u/81651f85a5924346ae577ae6feb4ca2c.jpg",
+                       artist: "Sigur Rós",
+                       title: "Kveikur",
+                       spotify: "http://open.spotify.com/album/5eee2WTHHXLjsuZJ0WZ1kL"
+                     },
+                     {
+                       rank: 22,
+                       cover: "http://img2-ak.lst.fm/i/u/b2e6cc8a43f2412ac19111277a4220b0.jpg",
+                       artist: "Year of No Light",
+                       title: "Tocsin",
+                       spotify: "http://open.spotify.com/album/0otxl4NsvWDdckqTGX8tKn"
+                     },
+                     {
+                       rank: 23,
+                       cover: "http://img2-ak.lst.fm/i/u/57ab91bf17db453b86aa7fe775219f68.jpg",
+                       artist: "Eluvium",
+                       title: "Nightmare Ending",
+                       spotify: "http://open.spotify.com/album/1M7jKEZHhLo8psVGZolfmb"
+                     },
+                     {
+                       rank: 24,
+                       cover: "http://img2-ak.lst.fm/i/u/b786192cd8fe4831a998946f3a5cb33b.jpg",
+                       artist: "Earl Sweatshirt",
+                       title: "Doris",
+                       spotify: "http://open.spotify.com/album/3bWhwSalV8hFBvlZ9Ny44R"
+                     },
+                     {
+                       rank: 25,
+                       cover: "http://img2-ak.lst.fm/i/u/e04ce91798e34c36b21a85a9fab01b40.jpg",
+                       artist: "The Field",
+                       title: "Cupid's Head",
+                       spotify: "http://open.spotify.com/album/2BzGdQ16lOid9w2mOuew4g"
+                     },
+                     {
+                       rank: 26,
+                       cover: "http://img2-ak.lst.fm/i/u/7e08e4964b6a4abe91fa7f4fc81122a6.jpg",
+                       artist: "Atoms for Peace",
+                       title: "AMOK",
+                       spotify: "http://open.spotify.com/album/4oktVvRuO1In9B7Hz0xm0a"
+                     },
+                     {
+                       rank: 27,
+                       cover: "http://img2-ak.lst.fm/i/u/d5bdd992fd4a459282d9215f6fb6b62b.jpg",
+                       artist: "Local Natives",
+                       title: "Hummingbird",
+                       spotify: "http://open.spotify.com/album/051I8OUCXMiEnua64QQKy3"
+                     },
+                     {
+                       rank: 28,
+                       cover: "http://img2-ak.lst.fm/i/u/19c28f994e4a4701b9410c99cc4db1cc.jpg",
+                       artist: "Altar of Plagues",
+                       title: "Teethed Glory and Injury",
+                       spotify: "http://open.spotify.com/album/0QWLvgrYwVMUVOHq3vvq9z"
+                     },
+                     {
                        rank: 29,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
-                       artist: "Death from Aboe 1979",
-                       title: "The Physical World"
+                       cover: "http://img2-ak.lst.fm/i/u/3f8b5e89d72d4871b10bae1b5e1a2977.jpg",
+                       artist: "Julianna Barwick",
+                       title: "Nepenthe",
+                       spotify: "http://open.spotify.com/album/6pkHRqnjCeXjQUDVbHzMlD"
                      },
                      {
                        rank: 30,
-                       cover: "https://archive.org/download/mbid-063f311e-9c81-4616-a007-b76e3df910c9/mbid-063f311e-9c81-4616-a007-b76e3df910c9-8515596987.jpg",
-                       artist: "Kevin Morby",
-                       title: "Still Life"
+                       cover: "http://img2-ak.lst.fm/i/u/f11c68d16b074322869815aa0273bb66.jpg",
+                       artist: "Neko Case",
+                       title: "The Worse Things Get, the Harder I Fight, the Harder I Fight, the More I Love You",
+                       spotify: "https://open.spotify.com/album/3tQTQZ8oy2IDwpmkYP08Fr"
                      }
 
                ]
