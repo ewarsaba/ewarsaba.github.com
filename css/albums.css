@@ -5,7 +5,7 @@ body {
 }
 
 .year-list {
-    width: 75%; 
+    width: 80%; 
     max-width: 750px;
     margin: 0 auto;
 }
@@ -27,7 +27,7 @@ body {
 
 }
 .rank {
-    width: 10%;
+    width: 20%;
     font-size: 4em; 
     text-align: center; 
     font-weight: 700;
@@ -40,7 +40,7 @@ body {
 }
 
 .album-info {
-    width: 50%;
+    width: 40%;
     max-width: 300px; 
     padding-left: 10px; 
 }
