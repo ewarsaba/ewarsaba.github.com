@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Eric Warsaba</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8" />  
@@ -20,13 +21,17 @@
          })();
          
          function toggle(id) {
-         var ele = document.getElementById(id);
-         if(ele.style.display == "block") {
-               ele.style.display = "none";
-           }
-         else {
-           ele.style.display = "block";
-         }
+            var ele = document.getElementById(id);
+            if(ele.style.display == "block") {
+                  ele.style.display = "none";
+              }
+            else {
+              ele.style.display = "block";
+
+
+              $('html,body').animate({
+                  scrollTop: $("#end").offset().top}, 'slow');
+            }
          } 
       </script>
    </head>
@@ -51,6 +56,7 @@
                <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE" target="_blank">2011</a></div>
             </div>
          </div>
+         <div id="end"></div>
       </div>
    </body>
 </html>
