@@ -17,6 +17,14 @@ body {
     margin: 20px;
 }
 
+.ratings-link {
+    text-align: center; 
+    font-size: 1em; 
+    font-weight: 600;
+    margin: 10px;
+    color: #EC6E21;
+}
+
 .album {
     clear: both; 
     overflow: auto; 

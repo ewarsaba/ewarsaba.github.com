@@ -47,6 +47,11 @@
 
          <div class="year-header">
             Best of <%- rc.year %>
+
+            <% if(rc.ratings != null) { %>
+                <br/>
+                <a class="ratings-link" href=<%= rc.ratings %> target="_blank" >Ratings</a>
+            <% } %>
          </div>
 
       <% _.each( rc.albums, function( album ){ %>
@@ -92,6 +97,7 @@
         var albums2015 = {
                year: 2015,
                state: "active",
+               ratings: "https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dHdVR0cydnhPaEpXZkpaUUlYSkFxc3c&usp=sharing",
                albums: [
                      {
                        rank: 1,
@@ -308,6 +314,7 @@
 
         var albums2014 = {
                year: 2014,
+               ratings: "https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGplVEtlekFUNFdrUHQ0YzVBUnFmcXc",
                albums: [
                      {
                        rank: 1,
@@ -525,6 +532,7 @@
 
         var albums2013 = {
                year: 2013,
+               ratings: "https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dFplOUNlU0xXRmswbC1OX3ZDaEtMQlE",
                albums: [
                      {
                        rank: 1,
@@ -742,6 +750,7 @@
 
         var albums2012 = {
                year: 2012,
+               ratings: "https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE",
                albums: [
                      {
                        rank: 1,
@@ -959,6 +968,7 @@
 
         var albums2011 = {
                year: 2011,
+               ratings: "https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE",
                albums: [
                      {
                        rank: 1,
