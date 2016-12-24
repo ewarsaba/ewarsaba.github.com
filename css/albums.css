@@ -40,7 +40,7 @@ body {
     font-size: 4em; 
     text-align: center; 
     font-weight: 700;
-    padding-right: 30px;
+    padding-right: 0px;
 }
 
 .cover {
@@ -51,7 +51,7 @@ body {
 .album-info {
     width: 40%;
     max-width: 300px; 
-    padding-left: 10px; 
+    padding-left: 20px; 
 }
 
 .separator {
