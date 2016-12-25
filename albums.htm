@@ -28,6 +28,7 @@
       <a href="http://eric.warsaba.com" class="home-link" >eric.warsaba.com</a>
 
       <ul class="nav nav-pills nav-justified">
+         <li id="li2016"><a data-toggle="pill" href="#albums2016">2016</a></li>
          <li id="li2015"><a data-toggle="pill" href="#albums2015">2015</a></li>
          <li id="li2014"><a data-toggle="pill" href="#albums2014">2014</a></li>
          <li id="li2013"><a data-toggle="pill" href="#albums2013">2013</a></li>
@@ -94,14 +95,233 @@
             $( "script.template" ).html()
         );
 
-        var year = 2015;
+        var year = 2016;
 
         if(window.location.hash) {
           year = parseInt(window.location.hash.substring(1));
         }
 
-        year = Math.min(2015, year);
+        year = Math.min(2016, year);
         year = Math.max(2009, year);
+
+        var albums2016 = {
+               year: 2016,
+               state: ((year == 2016) ? "active" : ""),
+               ratings: "https://docs.google.com/spreadsheets/d/1ofLO6_OvhB7DlYDyDWGgZBBK3Ey0aIY4g4v3yFd-UgQ",
+               albums: [
+                     {
+                       rank: 1,
+                       cover: "images/2016/bon-iver-22.jpg",
+                       artist: "Bon Iver",
+                       title: "22, A Million",
+                       spotify: "https://open.spotify.com/album/1PgfRdl3lPyACfUGH4pquG"
+                     },
+                     {
+                       rank: 2,
+                       cover: "images/2016/radiohead-moon.jpg",
+                       artist: "Radiohead",
+                       title: "A Moon Shaped Pool",
+                       spotify: "https://open.spotify.com/album/6vuykQgDLUCiZ7YggIpLM9"
+                     },
+                     {
+                       rank: 3,
+                       cover: "images/2016/hamilton-dream.jpg",
+                       artist: "Hamilton Leithauser + Rostam",
+                       title: "I Had A Dream That You Were Mine",
+                       spotify: "https://open.spotify.com/album/2TDuXjtpO4tdvm86KVNMk0"
+                     },
+                     {
+                       rank: 4,
+                       cover: "images/2016/car-seat-teens.jpg",
+                       artist: "Car Seat Headrest",
+                       title: "Teens of Denial",
+                       spotify: "https://open.spotify.com/album/26DseQO366JfXwIP7dIgQj"
+                     },
+                     {
+                       rank: 5,
+                       cover: "images/2016/nicolas-jaar-sirens.jpg",
+                       artist: "Nicolas Jaar",
+                       title: "Sirens",
+                       spotify: "https://open.spotify.com/album/2EvZiOMBlC9b5hbjbZCjZv"
+                     },
+                     {
+                       rank: 6,
+                       cover: "images/2016/james-blake-colour.jpg",
+                       artist: "James Blake",
+                       title: "The Colour In Anything",
+                       spotify: "https://open.spotify.com/album/6vuykQgDLUCiZ7YggIpLM9"
+                     },
+                     {
+                       rank: 7,
+                       cover: "images/2016/frank-ocean-blond.jpg",
+                       artist: "Frank Ocean",
+                       title: "Blonde",
+                       spotify: "https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf"
+                     },
+                     {
+                       rank: 8,
+                       cover: "images/2016/moderat-iii.jpg",
+                       artist: "Moderat",
+                       title: "III",
+                       spotify: "https://open.spotify.com/album/6vuykQgDLUCiZ7YggIpLM9"
+                     },
+                     {
+                       rank: 9,
+                       cover: "images/2016/kanye-pablo.jpg",
+                       artist: "Kanye West",
+                       title: "The Life of Pablo",
+                       spotify: "https://open.spotify.com/album/7gsWAHLeT0w7es6FofOXk1"
+                     },
+                     {
+                       rank: 10,
+                       cover: "images/2016/preoccupations.jpg",
+                       artist: "Preoccupations",
+                       title: "Preoccupations",
+                       spotify: "https://open.spotify.com/album/5kBJNDLSdSLHITO6IGgISE"
+                     },
+                     {
+                       rank: 11,
+                       cover: "images/2016/whitney-light.jpg",
+                       artist: "Whitney",
+                       title: "Light Upon the Lake",
+                       spotify: "https://open.spotify.com/album/5yMCA6HdFAeL1aqUjxO3MO"
+                     },
+                     {
+                       rank: 12,
+                       cover: "images/2016/anderson-paak-malibu.jpg",
+                       artist: "Anderson .Paak",
+                       title: "Malibu",
+                       spotify: "https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK"
+                     },
+                     {
+                       rank: 13,
+                       cover: "images/2016/kiwanuka-love.jpg",
+                       artist: "Michael Kiwanuka",
+                       title: "Love & Hate",
+                       spotify: "https://open.spotify.com/album/0qxsfpy2VU0i4eDR9RTaAU"
+                     },
+                     {
+                       rank: 14,
+                       cover: "images/2016/pinegrove-cardinal.jpg",
+                       artist: "Pinegrove",
+                       title: "Cardinal",
+                       spotify: "https://open.spotify.com/album/2SmrUzUMMOYQqoPuOhlhjw"
+                     },
+                     {
+                       rank: 15,
+                       cover: "images/2016/explosions-wilderness.jpg",
+                       artist: "Explosions In The Sky",
+                       title: "The Wilderness",
+                       spotify: "https://open.spotify.com/album/79X3DX8IqI3jZXQvsrFiDV"
+                     },
+                     {
+                       rank: 16,
+                       cover: "images/2016/beyonce-lemonade.jpg",
+                       artist: "Beyoncé",
+                       title: "Lemonade",
+                       spotify: null
+                     },
+                     {
+                       rank: 17,
+                       cover: "images/2016/truckers-american.jpg",
+                       artist: "Drive-By Truckers",
+                       title: "A Moon Shaped Pool",
+                       spotify: "https://open.spotify.com/album/5sluTQT3bq4WjBmE2jNisX"
+                     },
+                     {
+                       rank: 18,
+                       cover: "images/2016/holy-esque-ravine.jpg",
+                       artist: "Holy Esque",
+                       title: "At Hope's Ravine",
+                       spotify: "https://open.spotify.com/album/3zBzH0JnOdII8wGZU0SjDR"
+                     },
+                     {
+                       rank: 19,
+                       cover: "images/2016/white-lung-paradise.jpg",
+                       artist: "White Lung",
+                       title: "Paradise",
+                       spotify: "https://open.spotify.com/album/6OLicbdjTGlxAMbYby39F4"
+                     },
+                     {
+                       rank: 20,
+                       cover: "images/2016/chance-coloring.jpg",
+                       artist: "Chance the Rapper",
+                       title: "Coloring Book",
+                       spotify: "https://open.spotify.com/album/71QyofYesSsRMwFOTafnhB"
+                     },
+                     {
+                       rank: 21,
+                       cover: "images/2016/cult-mariner.jpg",
+                       artist: "Cult of Luna & Julie Christmas",
+                       title: "Mariner",
+                       spotify: "https://open.spotify.com/album/6vuykQgDLUCiZ7YggIpLM9"
+                     },
+                     {
+                       rank: 22,
+                       cover: "images/2016/greys-outer-heaven.jpg",
+                       artist: "Greys",
+                       title: "Outer Heaven",
+                       spotify: "https://open.spotify.com/album/7Gys3aNZTqk5o0bXqcMZwv"
+                     },
+                     {
+                       rank: 23,
+                       cover: "images/2016/pup-dream.jpg",
+                       artist: "PUP",
+                       title: "The Dream Is Over",
+                       spotify: "https://open.spotify.com/album/0nOAue4UAgOJMLroZc4aTL"
+                     },
+                     {
+                       rank: 24,
+                       cover: "images/2016/trance-frendz.jpg",
+                       artist: "Ólafur Arnalds and Nils Frahm",
+                       title: "Trance Frendz",
+                       spotify: "https://open.spotify.com/album/6VxUTTXNiD2fpKfsTznD3L"
+                     },
+                     {
+                       rank: 25,
+                       cover: "images/2016/avalanches-wildflower.jpg",
+                       artist: "The Avalanches",
+                       title: "Wildflower",
+                       spotify: "https://open.spotify.com/album/0j0djiGxLnBiW7meVc2PER"
+                     },
+                     {
+                       rank: 26,
+                       cover: "images/2016/odd-nosdam-sisters.jpg",
+                       artist: "Odd Nosdam",
+                       title: "Sisters",
+                       spotify: "https://open.spotify.com/album/6eI4AV8L9K6bF7099n192W"
+                     },
+                     {
+                       rank: 27,
+                       cover: "images/2016/holy-fuck-congrats.jpg",
+                       artist: "Holy Fuck",
+                       title: "Congrats",
+                       spotify: "https://open.spotify.com/album/6Aj3Q8clXwjhTitBx1rTWe"
+                     },
+                     {
+                       rank: 28,
+                       cover: "images/2016/russian-circles-guidance.jpg",
+                       artist: "Russian Circles",
+                       title: "Guidance",
+                       spotify: "https://open.spotify.com/album/2UskUDH7emQ3nBqhDgGhzj"
+                     },
+                     {
+                       rank: 29,
+                       cover: "images/2016/danny-brown-atrocity.jpg",
+                       artist: "Danny Brown",
+                       title: "Atrocity Exhibition",
+                       spotify: "https://open.spotify.com/album/3e7vtKJ3m1zVh38VGq2g3H"
+                     },
+                     {
+                       rank: 30,
+                       cover: "images/2016/cross-record-wabi.jpg",
+                       artist: "Cross Record",
+                       title: "Wabi-Sabi",
+                       spotify: "https://open.spotify.com/album/4NtiklQ1pE4FHngLr5pKw8"
+                     }
+
+               ]
+        };
 
         var albums2015 = {
                year: 2015,
@@ -1149,7 +1369,7 @@
                        cover: "images/2011/black-keys-camino.jpg",
                        artist: "The Black Keys",
                        title: "El Camino",
-                       spotify: null
+                       spotify: "https://open.spotify.com/album/5DLhV9yOvZ7IxVmljMXtNm"
                      },
                      {
                        rank: 25,
@@ -1618,6 +1838,9 @@
         );
         $( "#lists" ).after(
             template( albums2015 )
+        );
+        $( "#lists" ).after(
+            template( albums2016 )
         );
 
         var liID = "#li" + year;
