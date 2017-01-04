@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+ 
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="1; url=http://eric.warsaba.com/albums">
+ 
+<script>
+	var link = "http://eric.warsaba.com/albums"l
+	if(window.location.hash) {
+          link = link + "#" + (window.location.hash.substring(1));
+        }
+  	window.location.href = link;
+</script>
+ 
+<title>Page Redirection</title>
+ 
+<!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+If you are not redirected automatically, go <a href='http://eric.warsaba.com/albums'>here</a>
