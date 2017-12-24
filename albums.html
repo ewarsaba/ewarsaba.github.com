@@ -28,6 +28,7 @@
       <a href="http://eric.warsaba.com" class="home-link" >eric.warsaba.com</a>
 
       <ul class="nav nav-pills nav-justified">
+         <li id="li2017"><a data-toggle="pill" href="#albums2017">2017</a></li>
          <li id="li2016"><a data-toggle="pill" href="#albums2016">2016</a></li>
          <li id="li2015"><a data-toggle="pill" href="#albums2015">2015</a></li>
          <li id="li2014"><a data-toggle="pill" href="#albums2014">2014</a></li>
@@ -95,14 +96,232 @@
             $( "script.template" ).html()
         );
 
-        var year = 2016;
+        var year = 2017;
 
         if(window.location.hash) {
           year = parseInt(window.location.hash.substring(1));
         }
 
-        year = Math.min(2016, year);
+        year = Math.min(2017, year);
         year = Math.max(2009, year);
+
+        var albums2017 = {
+               year: 2017,
+               state: ((year == 2017) ? "active" : ""),
+               ratings: "https://docs.google.com/spreadsheets/d/1m-7BjB8yAIz_fpb3bjQSzuZolyy6R4My8QeDagmo0l8/edit?usp=sharing",
+               albums: [
+                     {
+                       rank: 1,
+                       cover: "images/2017/manchester-black.jpg",
+                       artist: "Manchester Orchestra",
+                       title: "A Black Mile to the Surface",
+                       spotify: "https://open.spotify.com/album/4hruYceqit29o6m4arpAql"
+                     },
+                     {
+                       rank: 2,
+                       cover: "images/2017/lcd-american.jpg",
+                       artist: "LCD Soundsystem",
+                       title: "American Dream",
+                       spotify: "https://open.spotify.com/album/4AF1M7bGCFL3LHCtXUUXw5"
+                     },
+                     {
+                       rank: 3,
+                       cover: "images/2017/elder-reflections.jpg",
+                       artist: "Elder",
+                       title: "Reflections of a Floating World",
+                       spotify: "https://open.spotify.com/album/15yxKj4XCoCfSVJsgRjZQt"
+                     },
+                     {
+                       rank: 4,
+                       cover: "images/2017/vince-big.jpg",
+                       artist: "Vince Staples",
+                       title: "Big Fish Theory",
+                       spotify: "https://open.spotify.com/album/5h3WJG0aZjNOrayFu3MhCS"
+                     },
+                     {
+                       rank: 5,
+                       cover: "images/2017/national-sleep.jpg",
+                       artist: "The National",
+                       title: "Sleep Well Beast",
+                       spotify: "https://open.spotify.com/album/6zG9PHw8dlMLIyRE9TEGGk"
+                     },
+                     {
+                       rank: 6,
+                       cover: "images/2017/moses-aromanticism.jpg",
+                       artist: "Moses Sumney",
+                       title: "Aromanticism",
+                       spotify: "https://open.spotify.com/album/30WjNaR79shSTGB52IJTw0"
+                     },
+                     {
+                       rank: 7,
+                       cover: "images/2017/gang-go.jpg",
+                       artist: "Gang of Youths",
+                       title: "Go Farther in Lightness",
+                       spotify: "https://open.spotify.com/album/0leVOEw8L2TnAfLGwkFnab"
+                     },
+                     {
+                       rank: 8,
+                       cover: "images/2017/wolf-visions.jpg",
+                       artist: "Wolf Alice",
+                       title: "Visions of a Life",
+                       spotify: "https://open.spotify.com/album/7BJmbXNSX1tUPmVjvrlqvz"
+                     },
+                     {
+                       rank: 9,
+                       cover: "images/2017/converge-dusk.jpg",
+                       artist: "Converge",
+                       title: "The Dusk in Us",
+                       spotify: "https://open.spotify.com/album/23cl7dningjCbwiNpOyFMP"
+                     },
+                     {
+                       rank: 10,
+                       cover: "images/2017/jason-nashville.jpg",
+                       artist: "Jason Isbell and the 400 Unit",
+                       title: "The Nashville Sound",
+                       spotify: "https://open.spotify.com/album/0gYLr4tpPpRrPg2WIS64jw"
+                     },
+                     {
+                       rank: 11,
+                       cover: "images/2017/protomartyr-relatives.jpg",
+                       artist: "Protomartyr",
+                       title: "Relatives in Descent",
+                       spotify: "https://open.spotify.com/album/5w1LR7cbTKEoCfgB98rkgR"
+                     },
+                     {
+                       rank: 12,
+                       cover: "images/2017/idles-brutalism.jpg",
+                       artist: "Idles",
+                       title: "Brutalism",
+                       spotify: "https://open.spotify.com/album/4KKBC1uABloAIFc0TiUv5r"
+                     },
+                     {
+                       rank: 13,
+                       cover: "images/2017/feist-pleasure.jpg",
+                       artist: "Feist",
+                       title: "Pleasure",
+                       spotify: "https://open.spotify.com/album/5lXgrzp3xcFdYCQXtsS6dG"
+                     },
+                     {
+                       rank: 14,
+                       cover: "images/2017/billy-known.jpg",
+                       artist: "Billy Woods",
+                       title: "Known Unknowns",
+                       spotify: "https://open.spotify.com/album/67paibJlA5CXa0i8L8rraq"
+                     },
+                     {
+                       rank: 15,
+                       cover: "images/2017/grizzly-painted.jpg",
+                       artist: "Grizzly Bear",
+                       title: "Painted Ruins",
+                       spotify: "https://open.spotify.com/album/3QOXA8bqsml8CslUdgHXrW"
+                     },
+                     {
+                       rank: 16,
+                       cover: "images/2017/kendrick-damn.jpg",
+                       artist: "Kendrick Lamar",
+                       title: "DAMN.",
+                       spotify: "https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY"
+                     },
+                     {
+                       rank: 17,
+                       cover: "images/2017/charlotte-rest.jpg",
+                       artist: "Charlotte Gainsbourg",
+                       title: "Rest",
+                       spotify: "https://open.spotify.com/album/4IonzjbKKCiU8ZvilbkdtS"
+                     },
+                     {
+                       rank: 18,
+                       cover: "images/2017/perfume-no.jpg",
+                       artist: "Perfume Genius",
+                       title: "No Shape",
+                       spotify: "https://open.spotify.com/album/7awgq3vvlsIeA7dZduR9x4"
+                     },
+                     {
+                       rank: 19,
+                       cover: "images/2017/all-sleeping.jpg",
+                       artist: "All Them Witches",
+                       title: "Sleeping Through the War",
+                       spotify: "https://open.spotify.com/album/6Yse0GPuOHRksNWmrEZQSw"
+                     },
+                     {
+                       rank: 20,
+                       cover: "images/2017/fleet-crack.jpg",
+                       artist: "Fleet Foxes",
+                       title: "Crack-Up",
+                       spotify: "https://open.spotify.com/album/0xtTojp4zfartyGtbFKN3v"
+                     },
+                     {
+                       rank: 21,
+                       cover: "images/2017/blanck-world.jpg",
+                       artist: "Blanck Mass",
+                       title: "World Eater",
+                       spotify: "https://open.spotify.com/album/6WElx5zuqd2CYiyea4oEc8"
+                     },
+                     {
+                       rank: 22,
+                       cover: "images/2017/oddisee-iceberg.jpg",
+                       artist: "Oddisee",
+                       title: "The Iceberg",
+                       spotify: "https://open.spotify.com/album/2dEkjiUBO6Z2aeolcJ7sCy"
+                     },
+                     {
+                       rank: 23,
+                       cover: "images/2017/spoon-hot.jpg",
+                       artist: "Spoon",
+                       title: "Hot Thoughts",
+                       spotify: "https://open.spotify.com/album/25Z3GFmKx6ntosMpCSngnI"
+                     },
+                     {
+                       rank: 24,
+                       cover: "images/2017/st-vincent-masseduction.jpg",
+                       artist: "St. Vincent",
+                       title: "MASSEDUCTION",
+                       spotify: "https://open.spotify.com/album/4RoOGpdrgfiIUyv0kLaC4e"
+                     },
+                     {
+                       rank: 25,
+                       cover: "images/2017/everything-fever.jpg",
+                       artist: "Everything Everything",
+                       title: "A Fever Dream",
+                       spotify: "https://open.spotify.com/album/2GtInYJkeBkKAHmVfWqLkN"
+                     },
+                     {
+                       rank: 26,
+                       cover: "images/2017/lowly-heba.jpg",
+                       artist: "Lowly",
+                       title: "Heba",
+                       spotify: "https://open.spotify.com/album/43V3jItNmPu2A81n0orBtS"
+                     },
+                     {
+                       rank: 27,
+                       cover: "images/2017/thunder-capture.jpg",
+                       artist: "Thunder Dreamer",
+                       title: "Capture",
+                       spotify: "https://open.spotify.com/album/1dN03DdU84W9hW1XlapzHC"
+                     },
+                     {
+                       rank: 28,
+                       cover: "images/2017/ibeyi-ash.jpg",
+                       artist: "Ibeyi",
+                       title: "Ash",
+                       spotify: "https://open.spotify.com/album/3AfBuChwSzSSufGjTAafzt"
+                     },
+                     {
+                       rank: 29,
+                       cover: "images/2017/london-truth.jpg",
+                       artist: "London Grammar",
+                       title: "Trust Is a Beautiful Thing",
+                       spotify: "https://open.spotify.com/album/2czuN6tZcR5ebpuK9A1Vur"
+                     },
+                     {
+                       rank: 30,
+                       cover: "images/2017/ghostpoet-dark.jpg",
+                       artist: "Ghostpoet",
+                       title: "Dark Days + Canapés",
+                       spotify: "https://open.spotify.com/album/1kjdKoY6fsbI11XH5SE4A3"
+                     }
+               ]
+        };
 
         var albums2016 = {
                year: 2016,
@@ -1856,6 +2075,9 @@
         );
         $( "#lists" ).after(
             template( albums2016 )
+        );
+        $( "#lists" ).after(
+            template( albums2017 )
         );
 
         var liID = "#li" + year;
