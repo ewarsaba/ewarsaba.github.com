@@ -28,6 +28,7 @@
       <a href="http://eric.warsaba.com" class="home-link" >eric.warsaba.com</a>
 
       <ul class="nav nav-pills nav-justified">
+         <li id="li2018"><a data-toggle="pill" href="#albums2018">2018</a></li>
          <li id="li2017"><a data-toggle="pill" href="#albums2017">2017</a></li>
          <li id="li2016"><a data-toggle="pill" href="#albums2016">2016</a></li>
          <li id="li2015"><a data-toggle="pill" href="#albums2015">2015</a></li>
@@ -96,14 +97,232 @@
             $( "script.template" ).html()
         );
 
-        var year = 2017;
+        var year = 2018;
 
         if(window.location.hash) {
           year = parseInt(window.location.hash.substring(1));
         }
 
-        year = Math.min(2017, year);
+        year = Math.min(2018, year);
         year = Math.max(2009, year);
+
+        var albums2018 = {
+               year: 2018,
+               state: ((year == 2018) ? "active" : ""),
+               ratings: "https://docs.google.com/spreadsheets/d/1m37VFzN8XZtsp4k7GPg5tNp2BaqEkejhG0W1x7qytV8/edit?usp=sharing",
+               albums: [
+                     {
+                       rank: 1,
+                       cover: "images/2018/deafheaven-ordinary.jpg",
+                       artist: "Deafheaven",
+                       title: "Ordinary Corrupt Human Love",
+                       spotify: "https://open.spotify.com/album/2iA7rzpQsOfAPkfH4Ekp7f?si=0diWUNagTIGYLX8qYZDmFA"
+                     },
+                     {
+                       rank: 2,
+                       cover: "images/2018/son-lux-brighter.jpg",
+                       artist: "Son Lux",
+                       title: "Brighter Wounds",
+                       spotify: "https://open.spotify.com/album/7xuWUPvk8Xb042QUigdIrE?si=eVO3lrQuRCK2zubFwA_q-Q"
+                     },
+                     {
+                       rank: 3,
+                       cover: "images/2018/idles-joy.jpg",
+                       artist: "Idles",
+                       title: "Joy as an Act of Resistance",
+                       spotify: "https://open.spotify.com/album/2JLMlrYV74wjlOqgsm2hfX?si=YSfcjjgXQky5CIXvF910HA"
+                     },
+                     {
+                       rank: 4,
+                       cover: "images/2018/fucked-up-dose.jpg",
+                       artist: "Fucked Up",
+                       title: "Dose Your Dreams",
+                       spotify: "https://open.spotify.com/album/4kWebszPvUH9FVEeseOcQb?si=JwCGhZN3TNOi_p4zlotVCw"
+                     },
+                     {
+                       rank: 5,
+                       cover: "images/2018/young-fathers-cocoa.jpg",
+                       artist: "Young Fathers",
+                       title: "Cocoa Sugar",
+                       spotify: "https://open.spotify.com/album/03Dp6OJS4wd7dI1rRszPwj?si=X3i0vn3yTpKlxTS9VFFU8Q"
+                     },
+                     {
+                       rank: 6,
+                       cover: "images/2018/daughters-you.jpg",
+                       artist: "Daughters",
+                       title: "You Won't Get What You Want",
+                       spotify: "https://open.spotify.com/album/7w7ZTlk8YLc0OxviTp97qA?si=uplSqIbgQY-V3pqMwjMaPw"
+                     },
+                     {
+                       rank: 7,
+                       cover: "images/2018/caroline-rose-loner.jpg",
+                       artist: "Caroline Rose",
+                       title: "Loner",
+                       spotify: "https://open.spotify.com/album/2ztVsnlMAsHqVe1BjoICnr?si=BjE1YEznTrSa9uDfpkY19Q"
+                     },
+                     {
+                       rank: 8,
+                       cover: "images/2018/aal-2012.jpg",
+                       artist: "Against All Logic",
+                       title: "2012-2017",
+                       spotify: "https://open.spotify.com/album/1uzfGk9vxMXfaZ2avqwxod?si=nPV63ejoQri0Ikv5Ckjgpg"
+                     },
+                     {
+                       rank: 9,
+                       cover: "images/2018/typhoon-offerings.jpg",
+                       artist: "Typhoon",
+                       title: "Offerings",
+                       spotify: "https://open.spotify.com/album/2vBpzavMnbiUATPGxSNEDr?si=pHHb496PTLyNnBc4_j0sxg"
+                     },
+                     {
+                       rank: 10,
+                       cover: "images/2018/neko-case-hell.jpg",
+                       artist: "Neko Case",
+                       title: "Hell-On",
+                       spotify: "https://open.spotify.com/album/7I141P48NQw206up7jBezG?si=U5CU3r9dRqmx1rGAwrD5_A"
+                     },
+                     {
+                       rank: 11,
+                       cover: "images/2018/mol-jord.jpg",
+                       artist: "Møl",
+                       title: "Jord",
+                       spotify: "https://open.spotify.com/album/1SRL7s4njVHBEytSmM3MsN?si=vCvJf4VoQ6O0dNFyHpzj9Q"
+                     },
+                     {
+                       rank: 12,
+                       cover: "images/2018/shame-songs.jpg",
+                       artist: "Shame",
+                       title: "Songs of Praise",
+                       spotify: "https://open.spotify.com/album/3A1kutvBmC6czSsSv7aR5E?si=H8OlPM6hQ_-NNflYRo7kqQ"
+                     },
+                     {
+                       rank: 13,
+                       cover: "images/2018/earl-some.jpg",
+                       artist: "Earl Sweatshirt",
+                       title: "Some Rap Songs",
+                       spotify: "https://open.spotify.com/album/66at85wgO2pu5CccvqUF6i?si=USPLaqbgRmSu8ot2dTl5Nw"
+                     },
+                     {
+                       rank: 14,
+                       cover: "images/2018/ken-mode-loved.jpg",
+                       artist: "KEN Mode",
+                       title: "Loved",
+                       spotify: "https://open.spotify.com/album/7c3Dw1cinGLeqk5xhz9EdR?si=QzUR5SqDRNGcJcbOM_EYCQ"
+                     },
+                     {
+                       rank: 15,
+                       cover: "images/2018/nils-frahm-all.jpg",
+                       artist: "Nils Frahm",
+                       title: "All Melody",
+                       spotify: "https://open.spotify.com/album/3MH77JVM17CEdDLz374t1e?si=r4ESUp6FQBySOcrhOloq_A"
+                     },
+                     {
+                       rank: 16,
+                       cover: "images/2018/kacey-musgraves-golden.jpg",
+                       artist: "Kacey Musgraves",
+                       title: "Golden Hour",
+                       spotify: "https://open.spotify.com/album/7f6xPqyaolTiziKf5R5Z0c?si=XS-8tuJESwaWZC45jiv5Jg"
+                     },
+                     {
+                       rank: 17,
+                       cover: "images/2018/mikaela-davis-delivery.jpg",
+                       artist: "Mikaela Davis",
+                       title: "Delivery",
+                       spotify: "https://open.spotify.com/album/4FUgK5s0hDVf5yKIOwq7ex?si=IWZgOLFNQoWsubcLwYLCfw"
+                     },
+                     {
+                       rank: 18,
+                       cover: "images/2018/kids-see-ghosts.jpg",
+                       artist: "Kids See Ghosts",
+                       title: "Kids See Ghosts",
+                       spotify: "https://open.spotify.com/album/6pwuKxMUkNg673KETsXPUV?si=LH3BCkTRSNOqx5KXvoalrw"
+                     },
+                     {
+                       rank: 19,
+                       cover: "images/2018/pusha-t-daytona.jpg",
+                       artist: "Pusha T",
+                       title: "Daytona",
+                       spotify: "https://open.spotify.com/album/07bIdDDe3I3hhWpxU6tuBp?si=M2_6n2feQcaZLVhfSMhTTw"
+                     },
+                     {
+                       rank: 20,
+                       cover: "images/2018/amanda-shires-sunset.jpg",
+                       artist: "Amanda Shires",
+                       title: "To the Sunset",
+                       spotify: "https://open.spotify.com/album/161jerzEynZ47m4SfxSVuW?si=ND6GtiLVQPifnEpQRmhWZA"
+                     },
+                     {
+                       rank: 21,
+                       cover: "images/2018/car-seat-twin.jpg",
+                       artist: "Car Seat Headrest",
+                       title: "Twin Fantasy",
+                       spotify: "https://open.spotify.com/album/20U1UWeGcGq7JVW0tf8yfH?si=ZG0zsFG2QCuAB8iry6CaYA"
+                     },
+                     {
+                       rank: 22,
+                       cover: "images/2018/jon-hopkins-singularity.jpg",
+                       artist: "Jon Hopkind",
+                       title: "Singularity",
+                       spotify: "https://open.spotify.com/album/1nvzBC1M3dlCMIxfUCBhlO?si=ARza4KllRgKEWhVrGTQdfg"
+                     },
+                     {
+                       rank: 23,
+                       cover: "images/2018/holy-fawn-death.jpg",
+                       artist: "Holy Fawn",
+                       title: "Death Spells",
+                       spotify: "https://open.spotify.com/album/7FftBO1RPryPqS91iua3ne?si=2kdduH9dTJejhjSm-89CfQ"
+                     },
+                     {
+                       rank: 24,
+                       cover: "images/2018/miya-folick-premonitions.jpg",
+                       artist: "Miya Folick",
+                       title: "Premonitions",
+                       spotify: "https://open.spotify.com/album/3nWDfV4stC2VQopcuHjJmO?si=AsWqhC6NRSKllGqTIngiRQ"
+                     },
+                     {
+                       rank: 25,
+                       cover: "images/2018/rolo-tomassi-time.jpg",
+                       artist: "Rolo Tomassi",
+                       title: "Time Will Die And Love Will Bury It",
+                       spotify: "https://open.spotify.com/album/1qThnC93s2D30V7wGudPdv?si=IIIysyrqS_qYyF_Vd4OgPg"
+                     },
+                     {
+                       rank: 26,
+                       cover: "images/2018/armed-only.jpg",
+                       artist: "The Armed",
+                       title: "Only Love",
+                       spotify: "https://open.spotify.com/album/0rqwAw1OsmH6qwGjnbAgn4?si=5aLM6awLSIeRmVpN8ZZrNg"
+                     },
+                     {
+                       rank: 27,
+                       cover: "images/2018/vince-staples-fm.jpg",
+                       artist: "Vince Staples",
+                       title: "FM!",
+                       spotify: "https://open.spotify.com/album/1XGGeqLZxjOMdCJhmamIn8?si=OpO_YPziTAWfEiP7hiSXvA"
+                     },
+                     {
+                       rank: 28,
+                       cover: "images/2018/iceage-beyondless.jpg",
+                       artist: "Iceage",
+                       title: "Beyondless",
+                       spotify: "https://open.spotify.com/album/5H8wFFblf7YvGc7LbBzuR9?si=NKRAT0R6RRi15xsf6EabtQ"
+                     },
+                     {
+                       rank: 29,
+                       cover: "images/2018/holy-all.jpg",
+                       artist: "HOLY",
+                       title: "All These Worlds Are Yours",
+                       spotify: "https://open.spotify.com/album/2xD41zvm7Mn7mB64IWtUHs?si=bHIDHugiQAW8P-IL0wKmAQ"
+                     },
+                     {
+                       rank: 30,
+                       cover: "images/2018/armand-hammer-paraffin.jpg",
+                       artist: "Armand Hammer",
+                       title: "Paraffin",
+                       spotify: "https://open.spotify.com/album/1LkgalktPs3mJMbcD9dhY8?si=sakGPKVQQE2RQcAtn4M3QA"
+                     }
+               ]
+        };
 
         var albums2017 = {
                year: 2017,
@@ -2079,6 +2298,9 @@
         );
         $( "#lists" ).after(
             template( albums2017 )
+        );
+        $( "#lists" ).after(
+            template( albums2018 )
         );
 
         var liID = "#li" + year;
