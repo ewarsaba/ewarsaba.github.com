@@ -26,7 +26,8 @@ a {
 .name {
 	float: left; 
 	width: 66%; 
-	font-size:3em;  
+	font-size:3em;
+	font-weight: bold;  
 }
 
 .contact-info {
@@ -70,6 +71,7 @@ a {
 
 .skill .title {
 	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .skill .desc {
@@ -109,13 +111,16 @@ a {
 }
 .job .company {
 	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
 }
 
 .job .title {
 	font-size: 1em;
+	font-weight: bold;
 }
 
-.job .dateloc {
+.job .location {
 	font-size: 0.8em;
 	float: right;
 	font-style: italic;
@@ -123,11 +128,20 @@ a {
 	padding-right:0.1em;
 }
 
-.job .job-company .dateloc {
+.job .dateloc {
+	font-size: 0.8em;
+	float: left;
+	/*font-style: italic;*/
+	text-align: right;
+	padding-left:1em;
+	padding-top: 0.2em;
+}
+
+.job .job-company .dateloc .location {
 	line-height: 2.6em;
 }
 
-.job .job-title .dateloc {
+.job .job-title .dateloc .location {
 	line-height: 1.75em;
 }
 
@@ -145,7 +159,7 @@ a {
 
 .job .desc li {
 	list-style: circle none inside;
-	padding-bottom: 0.3em;
+	padding-bottom: 0.5em;
 }
 
 .job .subtitle {
