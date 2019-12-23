@@ -28,6 +28,7 @@
       <a href="http://eric.warsaba.com" class="home-link" >eric.warsaba.com</a>
 
       <ul class="nav nav-pills nav-justified">
+         <li id="li2019"><a data-toggle="pill" href="#albums2019">2019</a></li>
          <li id="li2018"><a data-toggle="pill" href="#albums2018">2018</a></li>
          <li id="li2017"><a data-toggle="pill" href="#albums2017">2017</a></li>
          <li id="li2016"><a data-toggle="pill" href="#albums2016">2016</a></li>
@@ -97,14 +98,232 @@
             $( "script.template" ).html()
         );
 
-        var year = 2018;
+        var year = 2019;
 
         if(window.location.hash) {
           year = parseInt(window.location.hash.substring(1));
         }
 
-        year = Math.min(2018, year);
+        year = Math.min(2019, year);
         year = Math.max(2009, year);
+
+        var albums2019 = {
+               year: 2019,
+               state: ((year == 2019) ? "active" : ""),
+               ratings: "https://docs.google.com/spreadsheets/d/1VyQyx7TbQMfW41RTzRd4yKxjmjBGXIF25fbXpuuCyos/edit?usp=sharing",
+               albums: [
+                     {
+                       rank: 1,
+                       cover: "images/2019/bon-iver-i.jpg",
+                       artist: "Bon Iver",
+                       title: "i,i",
+                       spotify: "https://open.spotify.com/album/54DU59anGQsdrFP7utpshG?si=ClsbwFRTT3KOrKtaDDnoXA"
+                     },
+                     {
+                       rank: 2,
+                       cover: "images/2019/michael-kiwanuka.jpg",
+                       artist: "Michael Kiwanuka",
+                       title: "Kiwanuka",
+                       spotify: "https://open.spotify.com/album/1yIqauTni1V7l7djYAKSsZ?si=B8VODSCXSeaa4zxPQOE5RQ"
+                     },
+                     {
+                       rank: 3,
+                       cover: "images/2019/brittany-howard-jaime.jpg",
+                       artist: "Brittany Howard",
+                       title: "Jaime",
+                       spotify: "https://open.spotify.com/album/5Ut4UnPCzdFIksOf2XtL6M?si=hjUt8sxBTL6Ejdb9XtFDcw"
+                     },
+                     {
+                       rank: 4,
+                       cover: "images/2019/dave-harrington-pure.jpg",
+                       artist: "Dave Harrington Group",
+                       title: "Pure Imagination, No Country",
+                       spotify: "https://open.spotify.com/album/53LKVFugunQHN8IQeD0jVo?si=GTpDfh5QQpKR_O7xgMXzXA"
+                     },
+                     {
+                       rank: 5,
+                       cover: "images/2019/sharon-van-etten-remind.jpg",
+                       artist: "Sharon Van Etten",
+                       title: "Remind Me Tomorrow",
+                       spotify: "https://open.spotify.com/album/2dvXk4nacVRmDSnbKniwrS?si=Kvy0enRYQXKyOh2cqE3UqA"
+                     },
+                     {
+                       rank: 6,
+                       cover: "images/2019/sturgill-simpson-sound.jpg",
+                       artist: "Sturgill Simpson",
+                       title: "Sound & Fury",
+                       spotify: "https://open.spotify.com/album/2ITJBRqMwZ0luWBnnZQ4Hq?si=r_6X2tAtRA-8k7m2bUlOYA"
+                     },
+                     {
+                       rank: 7,
+                       cover: "images/2019/adia-victoria-silences.jpg",
+                       artist: "Adia Victoria",
+                       title: "Silences",
+                       spotify: "https://open.spotify.com/album/4nneOM4v04jUA5AROq5qr3?si=oDz3l-8RRz-XyscTY2LKjA"
+                     },
+                     {
+                       rank: 8,
+                       cover: "images/2019/mannequin-pussy-patience.jpg",
+                       artist: "Mannequin Pussy",
+                       title: "Patience",
+                       spotify: "https://open.spotify.com/album/1X0Na8DRV5U6G9grTPDWKF?si=cKfAzt8FRTKM8n7k0OB1wA"
+                     },
+                     {
+                       rank: 9,
+                       cover: "images/2019/national-easy.jpg",
+                       artist: "The National",
+                       title: "I Am Easy To Find",
+                       spotify: "https://open.spotify.com/album/240Gfpkjr06NUT3zBYrwVN?si=j9b9uoKQSKC-7b9AEpf9rg"
+                     },
+                     {
+                       rank: 10,
+                       cover: "images/2019/tyler-igor.jpg",
+                       artist: "Tyler, the Creator",
+                       title: "IGOR",
+                       spotify: "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=MuHW9CnGSyiNAtGp06oQPA"
+                     },
+                     {
+                       rank: 11,
+                       cover: "images/2019/thom-yorke-anima.jpg",
+                       artist: "Thom Yorke",
+                       title: "ANIMA",
+                       spotify: "https://open.spotify.com/album/1g4vEVvVVFvFju0gS0DMbh?si=DeKPiXuzTGG8klocOdlZQg"
+                     },
+                     {
+                       rank: 12,
+                       cover: "images/2019/girl-band-talkies.jpg",
+                       artist: "Girl Band",
+                       title: "The Talkies",
+                       spotify: "https://open.spotify.com/album/7CcsQ8Y3s65IZCoaBrZuIT?si=83nz7fzeQU68JuwFwu8vbg"
+                     },
+                     {
+                       rank: 13,
+                       cover: "images/2019/cult-of-luna-dawn.jpg",
+                       artist: "Cult of Luna",
+                       title: "A Dawn to Fear",
+                       spotify: "https://open.spotify.com/album/5wF8QXoGV5Woz6EzfZjMZC?si=RTKfvbtsRqS0ldxMZ4qU7Q"
+                     },
+                     {
+                       rank: 14,
+                       cover: "images/2019/big-brave-gaze.jpg",
+                       artist: "BIG|BRAVE",
+                       title: "A Gaze Among Them",
+                       spotify: "https://open.spotify.com/album/1i10no8p3y1igTW46jquub?si=qzPqj6bITU-zHR9qmbT5Wg"
+                     },
+                     {
+                       rank: 15,
+                       cover: "images/2019/angel-olsen-all-mirrors.jpg",
+                       artist: "Angel Olsen",
+                       title: "All Mirrors",
+                       spotify: "https://open.spotify.com/album/0RedX0LZkGUFoRwFntAaI0?si=UYlZCDbhTv2mOpeNZdlOmg"
+                     },
+                     {
+                       rank: 16,
+                       cover: "images/2019/hemlock-ernst-back.jpg",
+                       artist: "Hemlock Ernst & Kenny Segal",
+                       title: "Back at the House",
+                       spotify: "https://open.spotify.com/album/2T7xEVNUgsoZ1pDlseBpg2?si=H_YIkI1KSmGYrLaum-LN0A"
+                     },
+                     {
+                       rank: 17,
+                       cover: "images/2019/billy-woods-hiding.jpg",
+                       artist: "Billy Woods & kenny Segal",
+                       title: "Hiding Places",
+                       spotify: "https://open.spotify.com/album/0HmKhR7Umt3ACs52ZLnKyK?si=JODpeHysTr-2rY-JhXZisA"
+                     },
+                     {
+                       rank: 18,
+                       cover: "images/2019/robert-ellis-texas.jpg",
+                       artist: "Robert Ellis",
+                       title: "Texas Piano Man",
+                       spotify: "https://open.spotify.com/album/5EMqbcSQgub9fRFwmcfxa9?si=jOJ_CEieS8S6pbSAfIkU3w"
+                     },
+                     {
+                       rank: 19,
+                       cover: "images/2019/billie-eilish-when.jpg",
+                       artist: "Billie Eilish",
+                       title: "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+                       spotify: "https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh?si=cNikdLrbRaS3Ah4BeHz-Hg"
+                     },
+                     {
+                       rank: 20,
+                       cover: "images/2019/vampire-weekend-father.jpg",
+                       artist: "Vampire Weekend",
+                       title: "Father of the Bride",
+                       spotify: "https://open.spotify.com/album/1A3nVEWRJ8yvlPzawHI1pQ?si=GOfjLJlbQhyB-iRoZRc2NA"
+                     },
+                     {
+                       rank: 21,
+                       cover: "images/2019/king-princess-cheap.jpg",
+                       artist: "King Princess",
+                       title: "Cheap Queen",
+                       spotify: "https://open.spotify.com/album/00uqjqwLruO346z3cNlNqG?si=BUxU-d31SsO6y6JHtB8R-Q"
+                     },
+                     {
+                       rank: 22,
+                       cover: "images/2019/lana-del-rey-norman.jpg",
+                       artist: "Lana Del Rey",
+                       title: "Norman Fucking Rockwell!",
+                       spotify: "https://open.spotify.com/album/5XpEKORZ4y6OrCZSKsi46A?si=E2qWCKKYQlSPBl9SdKih9A"
+                     },
+                     {
+                       rank: 23,
+                       cover: "images/2019/greys-age.jpg",
+                       artist: "Greys",
+                       title: "Age Hasn't Spoiled You",
+                       spotify: "https://open.spotify.com/album/7j6SnwzeBNtq9oDh57vC3S?si=69I_gQGkSgydU1YGfNjR6w"
+                     },
+                     {
+                       rank: 24,
+                       cover: "images/2019/pile-green.jpg",
+                       artist: "Pile",
+                       title: "Green and Gray",
+                       spotify: "https://open.spotify.com/album/48zxqHWN4hZ8Vc5vf4UTfS?si=HEIeGT24TB2HM6gzkEMgtw"
+                     },
+                     {
+                       rank: 25,
+                       cover: "images/2019/flying-lotus-flamagra.jpg",
+                       artist: "Flying Lotus",
+                       title: "Flamagra",
+                       spotify: "https://open.spotify.com/album/5WfDyog8yO7ZF8JdJxeZfl?si=pmJh0iDGQs--ieRr8QIwWw"
+                     },
+                     {
+                       rank: 26,
+                       cover: "images/2019/fontaines-dogrel.jpg",
+                       artist: "Fontaines D.C.",
+                       title: "Dogrel",
+                       spotify: "https://open.spotify.com/album/5wsZN35Rqu4eZL3B3oTSDd?si=MJKOXH-OTFGf5gWBlIRa5Qs"
+                     },
+                     {
+                       rank: 27,
+                       cover: "images/2019/white-reaper-deserve.jpg",
+                       artist: "White Reaper",
+                       title: "You Deserve Love",
+                       spotify: "https://open.spotify.com/album/2hzRKcoWZUPY5M1qMrgtmR?si=nZhbrV4HQi6z4-2ee6iaYA"
+                     },
+                     {
+                       rank: 28,
+                       cover: "images/2019/petrol-girls-cut.jpg",
+                       artist: "Petrol Girls",
+                       title: "Cut & Stitch",
+                       spotify: "https://open.spotify.com/album/3mR4pqFm2wC3J6bgzizVgp?si=E-81yuEhTX-G910X8M6DFw"
+                     },
+                     {
+                       rank: 29,
+                       cover: "images/2019/inter-arma-sulphur.jpg",
+                       artist: "Inter Arma",
+                       title: "Sulphur English",
+                       spotify: "https://open.spotify.com/album/2aa2K1vqMD0vqpvPl5idlv?si=iGBKOunSQ02sAWeZQYmb2w"
+                     },
+                     {
+                       rank: 30,
+                       cover: "images/2019/kxp-iv.jpg",
+                       artist: "K-X-P",
+                       title: "IV",
+                       spotify: "https://open.spotify.com/album/2Cfu1DXmcbSVDbYKx4KE8i?si=gsENdLWCTiaF_iN9viQCiQ"
+                     }
+               ]
+        };
 
         var albums2018 = {
                year: 2018,
@@ -2301,6 +2520,9 @@
         );
         $( "#lists" ).after(
             template( albums2018 )
+        );
+        $( "#lists" ).after(
+            template( albums2019 )
         );
 
         var liID = "#li" + year;
