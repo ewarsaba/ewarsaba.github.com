@@ -23,7 +23,7 @@ body {
     font-family: 'Open Sans', sans-serif; 
     font-size: 1em;
     color: #fff;
-    background-color: #003D7E;
+    background-color: #041E42;
     min-height: 100%;
     text-align: center;
 }
@@ -51,7 +51,7 @@ a {
 }
 
 .albums-links a:hover {
-    color: #EC6E21;
+    color: #FF4C00;
 }
 
 .albums-links div {
@@ -64,8 +64,8 @@ a {
     font-size: 2em;
     font-weight: 600;
     color: #fff;
-    background-color: #EC6E21;
-    border-bottom: 5px solid #D95600;
+    background-color: #FF4C00;
+    border-bottom: 5px solid #E12E00;
     border-radius: 10px;
     margin: 10px 10px;
     text-align: left;
@@ -75,7 +75,7 @@ a {
     height: 40px;
 }
 .btn:hover, .btn:focus {
-    background-color: #E36900;
+    background-color: #FF6C00;
     border-bottom: 3px solid #B73400;
     color: #fff;
 }

@@ -1,6 +1,6 @@
 body {
     color: #ffffff;
-    background-color: #003D7E;
+    background-color: #041E42;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -22,7 +22,7 @@ body {
     font-size: 1em; 
     font-weight: 600;
     margin: 10px;
-    color: #EC6E21;
+    color: #FF4C00;
 }
 
 .album {
@@ -56,7 +56,7 @@ body {
 
 .separator {
     height:0;
-    border-top:4px solid #EC6E21;
+    border-top:4px solid #FF4C00;
     font-size:0;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .nav-pills li.active a, .nav-pills li.active a:focus, .nav-pills li.active a:hover {
-    background-color: #EC6E21;
+    background-color: #FF4C00;
     font-size: 1em;
     font-weight: 600;
 }
@@ -85,7 +85,7 @@ ul.nav li a:hover, ul.nav li a{
 
 ul.nav li a:hover {
     background-color: #ffffff;
-    color: #EC6E21;
+    color: #FF4C00;
 }
 
 .home-link {
@@ -94,5 +94,5 @@ ul.nav li a:hover {
 }
 
 .home-link:hover {
-    color: #EC6E21;
+    color: #FF4C00;
 }
