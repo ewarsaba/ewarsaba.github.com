@@ -1,98 +1,30 @@
 body {
-    color: #ffffff;
-    background-color: #041E42;
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Courier Prime', monospace;
+  color: #212529;
 }
 
-.year-list {
-    width: 95%;
-    max-width: 750px;
-    margin: 0 auto;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #f9f9f9;
+    background-color: #212529;
 }
 
-.year-header {
-    text-align: center; 
-    font-size: 2em; 
-    font-weight: bold;
-    margin: 20px;
+a {
+  color: #212529;
 }
 
-.ratings-link {
-    text-align: center; 
-    font-size: 1em; 
-    font-weight: 600;
-    margin: 10px;
-    color: #FF4C00;
+a:hover {
+  color: #FF4C00;
 }
 
-.album {
-    clear: both; 
-    overflow: auto; 
-    margin-bottom: 30px; 
+.bg-dark2 {
+  background-color: #212529;
 }
 
-.rank, .cover, .album-info {
-    float: left;
-
-}
-.rank {
-    width: 15%;
-    font-size: 3em; 
-    text-align: center; 
-    font-weight: 700;
-    padding-right: 0px;
+.bg-light2 {
+  background-color: #f9f9f9;
 }
 
-.cover {
-    width: 35%;
-    max-width: 300px; 
+.text-white2 {
+  color: #f9f9f9;
 }
 
-.album-info {
-    width: 50%;
-    max-width: 300px; 
-    padding-left: 20px; 
-}
-
-.separator {
-    height:0;
-    border-top:4px solid #FF4C00;
-    font-size:0;
-}
-
-.artist {
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.title {
-    font-size: 2em;
-    font-style: italic;
-    font-weight: 300;
-}
-
-.nav-pills li.active a, .nav-pills li.active a:focus, .nav-pills li.active a:hover {
-    background-color: #FF4C00;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-ul.nav li a:hover, ul.nav li a{
-    color: #FFFFFF;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-ul.nav li a:hover {
-    background-color: #ffffff;
-    color: #FF4C00;
-}
-
-.home-link {
-    font-size: 1em;
-    color: #eeeeee;
-}
-
-.home-link:hover {
-    color: #FF4C00;
-}
