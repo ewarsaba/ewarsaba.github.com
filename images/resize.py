@@ -31,7 +31,7 @@ def resize_assets(input, output):
 
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
-		print 'Usage: resize dir ...'
+		print('Usage: resize dir ...')
 	else:
 		for directory in sys.argv[1:]:
 			resize_directory(directory)
