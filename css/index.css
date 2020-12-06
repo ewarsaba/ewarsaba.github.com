@@ -42,8 +42,8 @@ a:hover {
 	height: 7rem;
 	font-size: 2rem;
 	background-color: #212529;
-	border-bottom: 5px solid #FF4C00;
-    border-radius: 15px;
+	border-bottom: 0.4rem solid #FF4C00;
+  border-radius: 1.2rem;
 }
 
 .button-link a {
