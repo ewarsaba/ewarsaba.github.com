@@ -1,67 +1,145 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Eric Warsaba</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8" />  
-      <script type="text/javascript">
-         var _gaq = _gaq || [];
-         _gaq.push(['_setAccount', 'UA-29646367-1']);
-         _gaq.push(['_trackPageview']);
-         
-         (function() {
-           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
-         
-         function toggle(id) {
-            var ele = document.getElementById(id);
-            if(ele.style.display == "block") {
-                  ele.style.display = "none";
-              }
-            else {
-              ele.style.display = "block";
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>eric warsaba</title>
+      <link rel="shortcut icon" type="image/png" href="icons/code-orange.png"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <!-- Custom styles for this template -->
+      <link href="css/index.css" rel="stylesheet">
 
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29646367-1']);
+      _gaq.push(['_trackPageview']);
 
-              $('html,body').animate({
-                  scrollTop: $("#end").offset().top}, 'slow');
-            }
-         } 
-      </script>
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
    </head>
-   <body>
-      <div class="container">
-         <div class="name">eric warsaba</div>
-         <div class="title">software engineer</div>
-         <a class="btn" href="resume"><img src="icons/resume.png"> resume</a>
-         <a class="btn" href="mailto:eric@warsaba.com" target="_blank"><img src="icons/email.png"> email</a>
-         <a class="btn" href="http://ca.linkedin.com/in/ewarsaba" target="_blank"><img src="icons/linkedin.png"> linkedin</a>
-         <a class="btn" href="http://twitter.com/ewarsaba" target="_blank"><img src="icons/twitter.png"> twitter</a>
-         <a class="btn" href="https://github.com/ewarsaba" target="_blank"><img src="icons/github.png"> github</a>
-         <a class="btn" href="http://www.last.fm/user/ewarsaba" target="_blank"><img src="icons/lastfm.png"> last.fm</a>
-         <div>
-            <a class="btn" href="javascript:toggle('albums');"><img src="icons/headphones.png"> albums</a>
-            <div id="albums" class="albums-links" style="display: none">
-               <div><a href="https://docs.google.com/spreadsheets/d/1Fg3tgA06cZWbZnLp28vZTDzKFldZJdUi-YXkg1mpPgs" target="_blank">2020</a></div>
-               <div><a href="https://docs.google.com/spreadsheets/d/1VyQyx7TbQMfW41RTzRd4yKxjmjBGXIF25fbXpuuCyos" target="_blank">2019</a></div>
-               <div><a href="https://docs.google.com/spreadsheets/d/1m37VFzN8XZtsp4k7GPg5tNp2BaqEkejhG0W1x7qytV8" target="_blank">2018</a></div>
-               <div><a href="https://docs.google.com/spreadsheets/d/1m-7BjB8yAIz_fpb3bjQSzuZolyy6R4My8QeDagmo0l8" target="_blank">2017</a></div>
-               <div><a href="https://docs.google.com/spreadsheets/d/1ofLO6_OvhB7DlYDyDWGgZBBK3Ey0aIY4g4v3yFd-UgQ" target="_blank">2016</a></div>
-               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dHdVR0cydnhPaEpXZkpaUUlYSkFxc3c" target="_blank">2015</a></div>
-               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGplVEtlekFUNFdrUHQ0YzVBUnFmcXc" target="_blank">2014</a></div>
-               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dFplOUNlU0xXRmswbC1OX3ZDaEtMQlE" target="_blank">2013</a></div>
-               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE" target="_blank">2012</a></div>
-               <div><a href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE" target="_blank">2011</a></div>
-               <div><a href="albums">albums of the year</a></div>
+   <body class="bg-light2">
+      <main role="main">
+         <div class="container">
+            <h1 class="text-center mb-0 mt-5 header-title"><strong>eric warsaba</strong></h1>
+            <h3 class="text-center mt-0 mb-5 header-title">software engineer</h3>
+            <div class="row justify-content-center">
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="http://eric.warsaba.com/resume"><img class="icon" src="icons/resume-white.png">resume</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="mailto:eric@warsaba.com" target="_blank"><img class="icon" src="icons/email-white.png">email</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="http://ca.linkedin.com/in/ewarsaba" target="_blank"><img class="icon" src="icons/linkedin-white.png">linkedin</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="http://twitter.com/ewarsaba" target="_blank"><img class="icon" src="icons/twitter-white.png">twitter</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="http://instagram.com/ewarsaba" target="_blank"><img class="icon" src="icons/instagram-white.png">instagram</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="https://github.com/ewarsaba" target="_blank"><img class="icon" src="icons/github-white.png">github</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="http://www.last.fm/user/ewarsaba" target="_blank"><img class="icon" src="icons/lastfm-white.png">last.fm</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="#" data-toggle="modal" data-target="#ratingsModal"><img class="icon" src="icons/cd-white.png">ratings</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="button-link d-flex align-items-center justify-content-center">
+                     <a class="stretched-link align-middle" href="http://eric.warsaba.com/albums"><img class="icon" src="icons/headphones-white.png">aoty</a>
+                  </div>
+               </div>
             </div>
          </div>
-         <div id="end"></div>
+      </main>
+
+      <!-- Modal -->
+      <div class="modal fade" id="ratingsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title"><strong>album sheets</strong></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body justify-content-center">
+              <div class="row justify-content-center">
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheets/d/1Fg3tgA06cZWbZnLp28vZTDzKFldZJdUi-YXkg1mpPgs" target="_blank">2020</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheets/d/1VyQyx7TbQMfW41RTzRd4yKxjmjBGXIF25fbXpuuCyos" target="_blank">2019</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheets/d/1m37VFzN8XZtsp4k7GPg5tNp2BaqEkejhG0W1x7qytV8" target="_blank">2018</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheets/d/1m-7BjB8yAIz_fpb3bjQSzuZolyy6R4My8QeDagmo0l8" target="_blank">2017</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheets/d/1ofLO6_OvhB7DlYDyDWGgZBBK3Ey0aIY4g4v3yFd-UgQ" target="_blank">2016</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dHdVR0cydnhPaEpXZkpaUUlYSkFxc3c" target="_blank">2015</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGplVEtlekFUNFdrUHQ0YzVBUnFmcXc" target="_blank">2014</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dFplOUNlU0xXRmswbC1OX3ZDaEtMQlE" target="_blank">2013</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dDhENXREbUNLVkJ3cF91WHhMMkRNZkE" target="_blank">2012</a></h4>
+                  </div>
+                  <div class="col-lg-4">
+                     <h4><a class="rating-link" href="https://docs.google.com/spreadsheet/ccc?key=0Auh0PJarGmr6dGM3Q3duNzRoczR5b0NJTEVXU3RaWUE" target="_blank">2011</a></h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   </body>
+      <script type="text/javascript">
+         var year = 2019;
+
+           if(window.location.hash) {
+             year = parseInt(window.location.hash.substring(1));
+           }
+
+           console.log(year);
+           year = Math.min(2019, year);
+           year = Math.max(2009, year);
+
+           $('#pills-tab a[href="#pills-' + year + '"]').tab('show');
+      </script>
 </html>
