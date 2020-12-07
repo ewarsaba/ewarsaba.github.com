@@ -53,3 +53,7 @@ a:hover {
 .button-link a:hover {
 	color: #FF4C00;
 }
+
+.modal-header {
+  border-bottom: 0.3rem solid #FF4C00;
+}
