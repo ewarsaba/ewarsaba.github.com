@@ -70,7 +70,7 @@
                </div>
                <div class="col-lg-4 mb-4">
                   <div class="button-link d-flex align-items-center justify-content-center">
-                     <a class="stretched-link align-middle" href="#" data-toggle="modal" data-target="#ratingsModal"><img class="icon" src="icons/cd-white.png">ratings</a>
+                     <a id="ratings-link" class="stretched-link align-middle" href="#" data-toggle="modal" data-target="#ratingsModal"><img class="icon" src="icons/cd-white.png">ratings</a>
                   </div>
                </div>
                <div class="col-lg-4 mb-4">
@@ -133,15 +133,11 @@
         </div>
       </div>
       <script type="text/javascript">
-         var year = 2019;
 
-           if(window.location.hash) {
-             year = parseInt(window.location.hash.substring(1));
-           }
-
-           year = Math.min(2019, year);
-           year = Math.max(2009, year);
-
-           $('#pills-tab a[href="#pills-' + year + '"]').tab('show');
+          if(window.location.hash) {
+            if (window.location.hash.substring(1) === "ratings") {
+              $("#ratings-link").trigger("click");
+            }
+          }
       </script>
 </html>
